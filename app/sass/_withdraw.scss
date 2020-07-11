@@ -81,7 +81,8 @@
 		font-size: 30px;
 		line-height: 1.25;
 		color: $middleblue;
-		margin: 0 0 40px;
+		max-width: 565px;
+		margin: 0;
 		small {
 			display: block;
 			font-size: 14px;
@@ -89,13 +90,18 @@
 			line-height: 1.5;
 			margin-bottom: 4px;
 		}
+		p {
+			font-size: 15px;
+			line-height: 140%;
+			color: #6D788C;
+			margin-top: 10px;
+			font-weight: 400;
+		}
+		&:last-child {
+			margin-bottom: 40px;
+		}
 	}
-	.page_header {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		margin-bottom: 40px;
-	}
+
 // lk_header
 
 // withdraw_form
@@ -144,6 +150,12 @@
 	.withdraw_form-fieldset {
 		grid-template-columns: 1fr
 	}
+	.page_header {
+		flex-direction: column;
+		.page_name:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
 }
 
 @media screen and (max-width: 510px) {
@@ -165,8 +177,3 @@
 		margin-right: 10px;
 	}
 }
-
-
-
-
-

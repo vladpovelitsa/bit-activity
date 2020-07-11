@@ -32,8 +32,13 @@
 	h1,h2,h3,h4,h5,h6,p {
 		font-size: inherit;
 	}
-	a, a:visited, a:focus {
+	a {
 		color: inherit;
+		text-decoration: none;
+		transition:.5s;
+	} 
+	a:visited, a:focus {
+		color: curentColor;
 		text-decoration: none;
 		transition: 0.5s;
 
@@ -335,7 +340,8 @@
 			color: #95A0B4;
 			position: relative;
 			padding-top: 50px;
-			width: 81px;
+			min-width: 81px;
+
 			font-size: 12px;
 			text-align: center;
 			
@@ -365,9 +371,12 @@
 				background: #95A0B4;
 
 			}
-			&:last-of-type:after {
-				display: none;
-				
+			&:last-of-type {
+				margin-right: 0;
+				&:after {
+					display: none;
+					
+				}
 			}
 			&.steps {
 				&-done {
@@ -416,6 +425,8 @@
 			padding: 0px;
 			font-size: 15px;
 			width: 100%;
+			position: relative;
+			
 			input,
 			select {
 				border:none;
@@ -540,6 +551,12 @@
 	}
 	.input_block-system .input_block-fieldset {
 		padding: 15px;
+	}
+	.steps {
+		overflow: auto;
+		-webkit-overflow-scrolling: auto; 
+		max-width: 100%;
+		padding-bottom: 15px;
 	}
 }
 @media screen and (max-width: 405px) {

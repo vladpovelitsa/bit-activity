@@ -106,3 +106,18 @@
 		}
 	}
 }
+
+.runline {
+ animation: runline 15s linear infinite;
+}
+
+.runline:hover {
+ animation-play-state: paused
+}
+
+@keyframes runline {
+ 0%   { transform: translate(0, 0); }
+ 100% { transform: translate(-100%, 0); }
+ // 100%   { transform: translate(0, 0); }
+
+}

@@ -1,11 +1,14 @@
 /*fonts*/
 	@font-face {
-		font-family: 'name';
-		src: url('../fonts/name/name.woff2') format('woff2'), /* Super Modern Browsers */
-			 url('../fonts/name/name.woff') format('woff'), /* Pretty Modern Browsers */
-			 url('../fonts/name/name.ttf')  format('truetype'); /* Safari, Android, iOS */
+		font-family: 'Circe';
+		src: url('../fonts/circe/Circe-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+			 url('../fonts/circe/Circe-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
 		font-weight: 400;
-		
 	}
-
+	@font-face {
+		font-family: 'Circe';
+		src: url('../fonts/circe/Circe-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+			 url('../fonts/circe/Circe-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+		font-weight: 700;
+	}
 /*fonts*/

@@ -1,0 +1,391 @@
+<!-- modals -->
+	<div class="modal" id="reg">
+		<div class="modal_content modal_content-login">
+			<button class="close"></button>
+			<header class="modal_header">
+				<h5 class="modal_name">
+					Account creation
+				</h5>
+				<p class="modal_text">
+					Already have account? <a href="#" data-target='login' class="moda l_btn">Login</a>
+				</p>
+			</header>
+			<form action="">
+				<div class="input_block">
+					<p class="input_block-label">
+						Your email
+					</p>
+					<div class="input_block-fieldset">
+						<input type="email" name="email" placeholder="example@mail.com">
+					</div>
+					<P class="error_text">
+						не те цифры
+					</P>
+				</div>
+				<div class="input_block">
+					<p class="input_block-label">
+						Your name
+					</p>
+					<div class="input_block-fieldset">
+						<input type="text" name="name" placeholder='Jhon Doe'>
+					</div>
+					<P class="error_text">
+						не те цифры
+					</P>
+				</div>
+				<div class="input_block">
+					<p class="input_block-label">
+						Your cryptowallet
+					</p>
+					<div class="input_block-fieldset">
+						<input type="text" name="cryptowallet" placeholder="0x098989493824982938498234">
+					</div>
+					<P class="error_text">
+						не те цифры
+					</P>
+				</div>
+				<div class="input_block">
+					<p class="input_block-label">
+						Secret question
+					</p>
+					<div class="input_block-fieldset">
+						<input type="text" name="question" placeholder="How mush money in my bag?">
+					</div>
+					<P class="error_text">
+						не те цифры
+					</P>
+				</div>
+				<div class="input_block">
+					<p class="input_block-label">
+						Your password
+					</p>
+					<div class="input_block-fieldset">
+						<input type="password" name="password" placeholder="************">
+						<button type="button" class="password_toggler">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M21.0231 10.5466C20.9431 10.4233 19.7548 8.64495 17.6056 7.23079L20.9139 3.92162L19.7356 2.74329L3.50977 18.97L4.6881 20.1483L8.97643 15.86C9.88727 16.1441 10.8914 16.3216 11.9914 16.3216C17.6614 16.3216 20.8806 11.6675 21.0148 11.4683L21.3256 11.0116L21.0231 10.5466ZM11.9906 14.655C11.4139 14.655 10.8698 14.59 10.3506 14.485L11.9398 12.8958C12.1498 12.9533 12.3689 12.9883 12.5981 12.9883C13.9781 12.9883 15.0981 11.87 15.0981 10.4883C15.0981 10.26 15.0631 10.04 15.0056 9.82995L16.3898 8.44579C17.7998 9.30579 18.7889 10.3841 19.2764 10.9891C18.3706 12.0641 15.7914 14.655 11.9906 14.655Z" fill="#A5B9CA"/>
+							<path d="M5.83737 14.2849L7.0482 13.0741C5.9307 12.3266 5.12904 11.4916 4.70487 10.9883C5.59654 9.87495 8.16654 7.15495 11.9915 7.15495C12.3065 7.15495 12.6099 7.17911 12.9074 7.21495L14.3374 5.78495C13.609 5.60245 12.8307 5.48828 11.9915 5.48828C6.31154 5.48828 3.0932 10.3399 2.95987 10.5466L2.6582 11.0116L2.96904 11.4683C3.0407 11.5758 4.03404 13.0058 5.83737 14.2849Z" fill="#A5B9CA"/>
+							</svg>
+						</button>
+					</div>
+					<P class="error_text">
+						не те цифры
+					</P>
+				</div>
+				<div class="google-auth_wrap">
+					<h4>
+						Recommended!
+					</h4>
+					<button type="button" class="btn btn-s">
+						<span>
+							Activate
+						</span>
+						<span>
+							<img src="img/google_auth.png" alt="#">
+						</span>
+						Google Authenticator
+					</button>
+				</div>
+				
+				<button class="btn btn-xl btn-light">
+					Create an account
+				</button>
+				<button type="button" class="btn btn-l btn-shadow">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M26.7917 2H3.45833C2.65188 2 2 2.65333 2 3.45833V26.7917C2 27.5967 2.65188 28.25 3.45833 28.25H16.0219V18.1H12.6123V14.126H16.0219V11.2094C16.0219 7.81875 18.0927 5.97104 21.126 5.97104C22.1454 5.96813 23.1662 6.02063 24.1812 6.12708V9.65625H22.0885C20.4435 9.65625 20.1227 10.4408 20.1227 11.5885V14.1188H24.0558L23.5454 18.0927H20.1213V28.25H26.7917C27.5981 28.25 28.25 27.5967 28.25 26.7917V3.45833C28.25 2.65333 27.5981 2 26.7917 2Z" fill="#1A41CC"/>
+					</svg>
+					Sign up with Facebook
+				</button>
+				<button type="button" class="btn btn-l btn-shadow">
+					<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0)">
+					<path d="M29.0002 15.3443C29.0002 14.3247 28.9186 13.2995 28.7447 12.2964H14.791V18.0726H22.7816C22.45 19.9356 21.3846 21.5835 19.8246 22.6308V26.3787H24.5917C27.3912 23.7662 29.0002 19.908 29.0002 15.3443Z" fill="#4285F4"/>
+					<path d="M14.7902 29.9999C18.7801 29.9999 22.1448 28.6716 24.5964 26.3788L19.8292 22.6308C18.5028 23.5458 16.7906 24.0639 14.7956 24.0639C10.9362 24.0639 7.66385 21.4238 6.48971 17.8743H1.57031V21.7379C4.08165 26.8032 9.19674 29.9999 14.7902 29.9999Z" fill="#34A853"/>
+					<path d="M6.48568 17.8743C5.86599 16.0113 5.86599 13.9941 6.48568 12.1311V8.26746H1.57171C-0.526508 12.5059 -0.526508 17.4995 1.57171 21.738L6.48568 17.8743Z" fill="#FBBC04"/>
+					<path d="M14.7902 5.93598C16.8993 5.90291 18.9377 6.70761 20.4652 8.18474L24.6888 3.90217C22.0144 1.35578 18.4648 -0.0441811 14.7902 -8.78003e-05C9.19674 -8.78003e-05 4.08165 3.19668 1.57031 8.26741L6.48428 12.1311C7.65297 8.57607 10.9308 5.93598 14.7902 5.93598Z" fill="#EA4335"/>
+					</g>
+					<defs>
+					<clipPath id="clip0">
+					<rect width="29" height="30" fill="white"/>
+					</clipPath>
+					</defs>
+					</svg>
+					Sign up with Google
+				</button>
+				<p class="modal_text">
+					<a href="#" class="modal_btn" data-target='login'>Log in your account</a>
+				</p>
+			</form>
+		</div>		
+	</div>
+	<div class="modal" id="login">
+		<div class="modal_content modal_content-login">
+			<button class="close"></button>
+			<header class="modal_header">
+				<h5 class="modal_name">
+					Log in to your account
+				</h5>
+				<p class="modal_text">
+					Enter login and password for authentication
+				</p>
+			</header>
+			<form action="">
+				<div class="input_block">
+					<p class="input_block-label">
+						Your email
+					</p>
+					<div class="input_block-fieldset">
+						<input type="email" name="email" placeholder="example@mail.com">
+					</div>
+					<P class="error_text">
+						не те цифры
+					</P>
+				</div>
+				<div class="input_block">
+					<p class="input_block-label">
+						Your password
+					</p>
+					<div class="input_block-fieldset">
+						<input type="password" name="password" placeholder="************">
+						<button type="button" class="password_toggler">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M21.0231 10.5466C20.9431 10.4233 19.7548 8.64495 17.6056 7.23079L20.9139 3.92162L19.7356 2.74329L3.50977 18.97L4.6881 20.1483L8.97643 15.86C9.88727 16.1441 10.8914 16.3216 11.9914 16.3216C17.6614 16.3216 20.8806 11.6675 21.0148 11.4683L21.3256 11.0116L21.0231 10.5466ZM11.9906 14.655C11.4139 14.655 10.8698 14.59 10.3506 14.485L11.9398 12.8958C12.1498 12.9533 12.3689 12.9883 12.5981 12.9883C13.9781 12.9883 15.0981 11.87 15.0981 10.4883C15.0981 10.26 15.0631 10.04 15.0056 9.82995L16.3898 8.44579C17.7998 9.30579 18.7889 10.3841 19.2764 10.9891C18.3706 12.0641 15.7914 14.655 11.9906 14.655Z" fill="#A5B9CA"/>
+							<path d="M5.83737 14.2849L7.0482 13.0741C5.9307 12.3266 5.12904 11.4916 4.70487 10.9883C5.59654 9.87495 8.16654 7.15495 11.9915 7.15495C12.3065 7.15495 12.6099 7.17911 12.9074 7.21495L14.3374 5.78495C13.609 5.60245 12.8307 5.48828 11.9915 5.48828C6.31154 5.48828 3.0932 10.3399 2.95987 10.5466L2.6582 11.0116L2.96904 11.4683C3.0407 11.5758 4.03404 13.0058 5.83737 14.2849Z" fill="#A5B9CA"/>
+							</svg>
+						</button>
+					</div>
+					<P class="error_text">
+						не те цифры
+					</P>
+				</div>
+				<div class="login_links modal_text">
+					<a href="#" class="modal_btn" data-target='restore'>Forgot your password?</a>
+					<a href="#" class="modal_btn" data-target='reg'>Create an account</a>
+				</div>
+
+				<button class="btn btn-xl btn-light">
+					Create an account
+				</button>
+				<button type="button" class="btn btn-l btn-shadow">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M26.7917 2H3.45833C2.65188 2 2 2.65333 2 3.45833V26.7917C2 27.5967 2.65188 28.25 3.45833 28.25H16.0219V18.1H12.6123V14.126H16.0219V11.2094C16.0219 7.81875 18.0927 5.97104 21.126 5.97104C22.1454 5.96813 23.1662 6.02063 24.1812 6.12708V9.65625H22.0885C20.4435 9.65625 20.1227 10.4408 20.1227 11.5885V14.1188H24.0558L23.5454 18.0927H20.1213V28.25H26.7917C27.5981 28.25 28.25 27.5967 28.25 26.7917V3.45833C28.25 2.65333 27.5981 2 26.7917 2Z" fill="#1A41CC"/>
+					</svg>
+					Sign up with Facebook
+				</button>
+				<button type="button" class="btn btn-l btn-shadow">
+					<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0)">
+					<path d="M29.0002 15.3443C29.0002 14.3247 28.9186 13.2995 28.7447 12.2964H14.791V18.0726H22.7816C22.45 19.9356 21.3846 21.5835 19.8246 22.6308V26.3787H24.5917C27.3912 23.7662 29.0002 19.908 29.0002 15.3443Z" fill="#4285F4"/>
+					<path d="M14.7902 29.9999C18.7801 29.9999 22.1448 28.6716 24.5964 26.3788L19.8292 22.6308C18.5028 23.5458 16.7906 24.0639 14.7956 24.0639C10.9362 24.0639 7.66385 21.4238 6.48971 17.8743H1.57031V21.7379C4.08165 26.8032 9.19674 29.9999 14.7902 29.9999Z" fill="#34A853"/>
+					<path d="M6.48568 17.8743C5.86599 16.0113 5.86599 13.9941 6.48568 12.1311V8.26746H1.57171C-0.526508 12.5059 -0.526508 17.4995 1.57171 21.738L6.48568 17.8743Z" fill="#FBBC04"/>
+					<path d="M14.7902 5.93598C16.8993 5.90291 18.9377 6.70761 20.4652 8.18474L24.6888 3.90217C22.0144 1.35578 18.4648 -0.0441811 14.7902 -8.78003e-05C9.19674 -8.78003e-05 4.08165 3.19668 1.57031 8.26741L6.48428 12.1311C7.65297 8.57607 10.9308 5.93598 14.7902 5.93598Z" fill="#EA4335"/>
+					</g>
+					<defs>
+					<clipPath id="clip0">
+					<rect width="29" height="30" fill="white"/>
+					</clipPath>
+					</defs>
+					</svg>
+					Sign up with Google
+				</button>
+				<p class="modal_text">
+					<a href="#" class="modal_btn" data-target='reg'>No account? Register now and accumulate a discount!</a>
+				</p>
+			</form>
+		</div>
+	</div>
+	<div class="modal" id="smth">
+		<div class="modal_content">
+			<button class="close"></button>
+			<header class="modal_header">
+				<h5 class="modal_name">
+					Something happened
+				</h5>
+				<p class="modal_text">
+					To use Stacker you need to have an Airtable base. If you don't have an Airtable base you can sign up for Airtable and create a base. a paid Airtable plan to use Stacker
+				</p>
+			</header>
+			<button class="btn btn-s btn-middleblue close_modal">
+				Okay
+			</button>
+		</div>
+	</div>
+	<div class="modal" id="g-auth">
+		<div class="modal_content">
+			<button class="close"></button>
+			<header class="modal_header">
+				<h5 class="modal_name">
+					Google authentificator
+				</h5>
+				<p class="modal_text">
+					Dear customer! We need a token what you get from google authemtificator app to connect it with this site. Please say me my dear what you get:
+				</p>
+			</header>
+			<div class="input_block">
+				<p class="input_block-label">
+					Token
+				</p>
+				<div class="input_block-fieldset">
+					<input type="text" name="token">
+				</div>
+				<P class="error_text">
+					не те цифры
+				</P>
+			</div>
+			<button class="btn btn-s btn-middleblue close_modal">
+				Okay
+			</button>
+		</div>
+	</div>
+	<div class="modal" id="active-g">
+		<div class="modal_content modal_content-auth">
+			<button class="close"></button>
+			<header class="modal_header">
+				<h5 class="modal_name">
+					Activate GoogleAuth
+				</h5>
+			</header>
+			<h6>
+				Download the app
+			</h6>
+			<div class="get_app">
+				<a href="#">
+					<img src="img/appstore.png" alt="download">
+				</a>
+				<a href="#">
+					<img src="img/googleplay.png" alt="download">
+				</a>
+			</div>
+			<h6>
+				Get QR code
+			</h6>
+			<div class="get_app">
+				<img src="img/qr.png" alt="qr-code">
+			</div>
+			<h6>
+				Get secret code
+			</h6>
+			<div class="input_block">
+				<div class="input_block-fieldset">
+					<input type="text" name="code" value="ASS&FU8788874" disabled="">
+					<button class="btn btn-white btn-s btn-copy">copy</button>
+				</div>
+				<P class="error_text">
+					не те цифры
+				</P>
+			</div>
+			<div class="input_block">
+				<p class="input_block-label modal_text">
+					Enter your token
+				</p>
+				<div class="input_block-fieldset">
+					<input type="text" name="token">
+				</div>
+				<P class="error_text">
+					не те цифры
+				</P>
+			</div>
+			<button class="btn btn-l btn-middleblue close_modal">
+				Continue
+			</button>
+			<button class="btn btn-m close_modal btn-white">
+				Cancel
+			</button>
+		</div>
+	</div>
+	
+	<div class="notification_wrap">
+		<div class="notification notification-success">
+			<span class="notify-icon"></span>
+			<p>
+				Success!
+			</p>
+			<button class="notify-close"></button>
+		</div>
+		<div class="notification notification-error">
+			<span class="notify-icon"></span>
+			<p>
+				Ow no! Failure!
+			</p>
+			<button class="notify-close"></button>
+		</div>
+		<div class="notification notification-warning">
+			<span class="notify-icon"></span>
+			<p>
+				Please enable Google Auth!
+			</p>
+			<button class="notify-close"></button>
+		</div>
+	</div>
+
+	<div class="modal" id="loading">
+		<div class="modal_content">
+			<header class="modal_header">
+				<h5 class="modal_name">
+					We withdraw funds ...
+				</h5>
+			</header>
+			<div class="loading_wrap">
+				<p class="loading_title">
+					progress:
+				</p>
+
+				<div class="progressbar">
+					<div class="progress"></div>
+				</div>
+
+				<p class="loading_text modal_text">
+					Please wait some time
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="token">
+		<div class="modal_content">
+			<header class="modal_header">
+				<h5 class="modal_name">
+					We need your GA token
+				</h5>
+			</header>
+			<form action="" class="token_wrap">
+				<div class="input_block">
+					<p class="input_block-label">
+						Enter your wallet
+					</p>
+					<div class="input_block-fieldset">
+						<input type="text" name="wallet">
+					</div>
+					<P class="error_text">
+						не те цифры
+					</P>
+				</div>
+				<button class="btn btn-s btn-light">
+					Continue
+				</button>
+			</form>
+		</div>
+	</div>
+	<div class="modal" id="withdraw_done">
+		<div class="modal_content">
+			<button class="close"></button>
+			<header class="modal_header">
+				<h5 class="modal_name">
+					We withdraw funds ...
+				</h5>
+			</header>
+			<div class="notification notification-static notification-success">
+				<span class="notify-icon"></span>
+				<p>
+					All done!
+				</p>
+				<button class="notify-close"></button>
+			</div>
+			<p class="batch_heading">
+				Your batch is 
+			</p>
+			<p class="batch_value">
+				71420da182c4f2aa17112cde5a824d67c4d5058bc43efae1e 37cfd540cb55fc0
+			</p>
+		</div>
+	</div>
+<!-- modals -->

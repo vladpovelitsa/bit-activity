@@ -1,0 +1,172 @@
+// lk_header
+	.main_lk {
+		padding-top: 32px;
+		padding-bottom: 200px;
+		.input_block {
+			margin-bottom: 35px;
+		}
+	}
+	.lk_header {
+		background: #FFFFFF;
+		box-shadow: 0px 18px 35px rgba(136, 178, 222, 0.13);
+		border-radius: 8px;
+		padding: 14px 16px 15px 19px;
+		margin-bottom: 50px;
+		display: flex;
+		align-items: center;
+	}
+	.user {
+		display: flex;
+		align-items: center;
+		margin-right: 72px;
+		.avatar_wrap {
+			display: block;
+			border: 1px solid #D3DEE6;
+			border-radius: 8px;
+			padding:6px 7px 5px;
+			margin-right: 14px;
+			min-width: 35px;
+		}
+		&_info {
+			font-weight: 700;
+			&-name {
+				font-size: 14px;
+				color:#053786;
+				line-height: 1.5;
+			}
+			&-id {
+				color:$middleblue;
+				font-size: 8px;
+				line-height: 1.33;
+			}
+		}
+	}
+
+	.logout {
+		display: block;
+		border: 1px solid #D3DEE6;
+		border-radius: 8px;
+		padding:6px 7px 5px;
+		margin-left: 14px;
+		min-width: 35px;
+		background: #fff;
+		&:hover {
+			&:hover {
+				background: $dark
+			}
+		}
+	}
+	
+	.lk_nav {
+		display: flex;
+		list-style: none;
+		color: #6D788C;
+		font-size: 14px;
+		line-height: .15;
+		font-weight: 700;
+		margin-right: auto;
+		
+		li {
+			margin-right: 50px;
+
+			a:hover,
+			&.active a  {
+				color:$middleblue;
+				text-decoration: underline;
+			}
+		}
+	}
+	.page_name {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 1.25;
+		color: $middleblue;
+		margin: 0 0 40px;
+		small {
+			display: block;
+			font-size: 14px;
+			color: #6D788C;
+			line-height: 1.5;
+			margin-bottom: 4px;
+		}
+	}
+	.page_header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 40px;
+	}
+// lk_header
+
+// withdraw_form
+	.withdraw_form {
+		box-shadow: 0px 18px 35px rgba(136, 178, 222, 0.13);
+		border-radius: 29px;
+		max-width: 740px;
+		padding:30px 34px 31px 38px;
+		background:#fff;
+		&-fieldset {
+			display: grid;
+			grid-template-columns: repeat(2, auto);
+			grid-gap: 17px 29px;
+			margin-bottom: 17px;
+		}
+		.input_block {
+			margin-bottom: 0;
+			&-fieldset {
+				width: 100%;
+			}
+		}
+		.btn {
+			padding: 17px 35px;
+		}
+	}
+// withdraw_form
+
+
+@media screen and (max-width: 1180px) {
+	.lk_header {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.lk_nav {
+		order: 99;
+		margin-top: 25px;
+		justify-content: space-between;
+		width: 100%;
+		li {
+			margin-right: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.withdraw_form-fieldset {
+		grid-template-columns: 1fr
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.lk_nav {
+		flex-direction: column;
+		li {
+			margin:15px 0;
+			text-align: left;	
+		}
+	}
+	.user {
+		margin-right: 10px;
+	}
+	.withdraw_form {
+		padding: 15px;
+		border-radius: 15px;
+	}
+	.system {
+		margin-right: 10px;
+	}
+}
+
+
+
+
+

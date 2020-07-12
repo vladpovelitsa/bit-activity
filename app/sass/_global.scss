@@ -250,11 +250,7 @@
 		}
 		&-copy {
 			text-transform: uppercase;
-			margin: 0 !important;
-			position: absolute;
-			right:8px;
-			top:50%;
-			transform: translate(0,-50%);
+			margin: 0 10px 0 0 !important;
 			font-size: 14px;
 			padding: 5px 14px;
 		}
@@ -437,7 +433,8 @@
 			input {
 				padding: 22px 20px 19px;
 				color: #6D788C;
-
+				max-width:100%;
+				width: 100%;
 				&:only-child,
 				&[type='password'] {
 					max-width:100%;

@@ -123,6 +123,9 @@ function navControls() {
     if (elem.classList.contains('user_nav-show')) {
       document.querySelector('.user_nav').classList.toggle('active')
     }
+    if (elem.classList.contains('lk_nav-toggler')) {
+      document.querySelector('.lk_nav').classList.toggle('active')
+    }
 }
 
 document.addEventListener('click', navControls)

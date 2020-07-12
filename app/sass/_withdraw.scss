@@ -104,7 +104,9 @@
 			margin-bottom: 0;
 		}
 	}
-
+	.lk_nav-toggler {
+		display: none;
+	}
 // lk_header
 
 // withdraw_form
@@ -159,16 +161,35 @@
 			margin-bottom: 20px;
 		}
 	}
-}
-
-@media screen and (max-width: 510px) {
 	.lk_nav {
 		flex-direction: column;
+		display: none;
+		
 		li {
 			margin:15px 0;
 			text-align: left;	
 		}
-	}
+		&-toggler {
+			display: block;
+		    border: 1px solid #D3DEE6;
+		    border-radius: 8px;
+		    padding: 6px 7px 5px;
+		    margin-left: 0px;
+		    min-width: 35px;
+		    background: #fff;
+		    height: 34px;
+		    svg {
+		    	pointer-events: none;
+		    }
+		}
+		&.active {
+			display: flex;
+		}
+	}	
+}
+
+@media screen and (max-width: 510px) {
+	
 	.user {
 		margin-right: 10px;
 	}

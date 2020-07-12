@@ -202,19 +202,17 @@ nav {
 			color: #69A0FF;
 			margin-right: 5px;
 			padding-left: 35px;
-			position: relative;
-			
-			&:before {
-				content:"";
-				display: block;
-				width: 26px;
-				height: 26px;
-				position: absolute;
-				top: 50%;
-				left: 0;
-				transform: translate(0,-50%);
-				background:url('../img/statusbar-icon.svg') center no-repeat;
-			}	
+			position: relative;	
+		}
+		&-currency {
+			content:"";
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 26px;
+			height: 26px;
+			border-radius: 50%;
+			background:#053786;
 		}
 		&-minus {
 			color: #FF0004;

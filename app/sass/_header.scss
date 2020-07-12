@@ -45,6 +45,7 @@
 				margin-left: 5px;
 				pointer-events:none;
 			}
+
 		}
 		.user_nav-show {
 			* {
@@ -78,6 +79,12 @@
 	a:hover {
 		text-decoration: underline;
 		color:$lightblue;
+	}
+	li {
+		margin-bottom: 15px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 	}
 }
 .logo {
@@ -178,7 +185,7 @@ nav {
 	background: #05286F;
 	padding-top:15px;
 	overflow: hidden;
-
+	padding-bottom: 15px;
 	&_list {
 		display: flex;
 		list-style: none;

@@ -47,8 +47,8 @@
 		font-style: normal;
 	}
 	.center {
-		padding-left: calc(50vw - 550px);
-		padding-right: calc(50vw - 550px);
+		padding-left: calc(50vw - 565px);
+		padding-right: calc(50vw - 565px);
 	}
 	.d-flex {
 		display: -webkit-flex;
@@ -95,10 +95,6 @@
 			margin:0 5px;
 		}
 	}
-	.wrapper {
-		padding-top: 103px;
-	}
-
 	.system {
 		display: flex;
 		align-items: center;
@@ -479,7 +475,7 @@
 			}
 		}
 		&_number {
-			padding-top: 24px;
+			padding-top: 16px;
 			&-item {
 				margin-right: 8px;
 				margin-bottom: 5px;
@@ -490,6 +486,16 @@
 				&:hover {
 					color: $middleblue;
 				}
+			}
+		}
+		&-error {
+			.error_text {
+				opacity: 1;
+			}
+		}
+		&-success {
+			input {
+				color:$middleblue;
 			}
 		}
 	}
@@ -527,9 +533,6 @@
 	.center {
 		padding-left: calc(50vw - 360px);
 		padding-right: calc(50vw - 360px);
-	}
-	.wrapper {
-		padding-top: 81px;
 	}
 }
 

@@ -13,7 +13,8 @@
 </head>
 <body>
 <div class="wrapper">
-//= templates/header.html
+//= templates/header_auth.html
+//= templates/statusbar.html
 	<main class="center main_lk gray_bg">
 		<div class="lk_header">
 			<div class="user">
@@ -77,10 +78,11 @@
 				</svg>
 			</button>
 		</div>
-		<h1 class="page_name">
-			Withdraw
-		</h1>
-
+		<header class="page_header">
+			<h1 class="page_name">
+				Withdraw
+			</h1>
+		</header>
 		<div class="input_block input_block-system">
 			<p class="input_block-label">
 				<strong>Select payment system</strong>
@@ -162,7 +164,7 @@
 	
 
 //= templates/modals.html
-//= templates/footer.html
+//= templates/footer_auth.html
 </div>
 <!-- scripts -->
 	<script src="js/libs.min.js"></script> <!-- main scripts -->

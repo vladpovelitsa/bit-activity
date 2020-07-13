@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>
+		Bit Activity
+	</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="fav.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+<div class="wrapper">
+//= templates/header_auth.html
+//= templates/statusbar.html
+	<main class="center main_lk gray_bg">
+		
+		//= templates/lk_header.html
+
+		<header class="page_header">
+			<h1 class="page_name">
+				Settings
+			</h1>
+		</header>
+		
+		<form action="" class="settings_form">
+			<h4>
+				Change password
+			</h4>
+			<div class="change_pass-wrap">
+				<div class="input_block">
+					<p class="input_block-label">
+						Old password
+					</p>
+					<div class="input_block-fieldset">
+						<input type="password" name="password" placeholder="************">
+						<button type="button" class="password_toggler">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M21.0231 10.5466C20.9431 10.4233 19.7548 8.64495 17.6056 7.23079L20.9139 3.92162L19.7356 2.74329L3.50977 18.97L4.6881 20.1483L8.97643 15.86C9.88727 16.1441 10.8914 16.3216 11.9914 16.3216C17.6614 16.3216 20.8806 11.6675 21.0148 11.4683L21.3256 11.0116L21.0231 10.5466ZM11.9906 14.655C11.4139 14.655 10.8698 14.59 10.3506 14.485L11.9398 12.8958C12.1498 12.9533 12.3689 12.9883 12.5981 12.9883C13.9781 12.9883 15.0981 11.87 15.0981 10.4883C15.0981 10.26 15.0631 10.04 15.0056 9.82995L16.3898 8.44579C17.7998 9.30579 18.7889 10.3841 19.2764 10.9891C18.3706 12.0641 15.7914 14.655 11.9906 14.655Z" fill="#A5B9CA"/>
+							<path d="M5.83737 14.2849L7.0482 13.0741C5.9307 12.3266 5.12904 11.4916 4.70487 10.9883C5.59654 9.87495 8.16654 7.15495 11.9915 7.15495C12.3065 7.15495 12.6099 7.17911 12.9074 7.21495L14.3374 5.78495C13.609 5.60245 12.8307 5.48828 11.9915 5.48828C6.31154 5.48828 3.0932 10.3399 2.95987 10.5466L2.6582 11.0116L2.96904 11.4683C3.0407 11.5758 4.03404 13.0058 5.83737 14.2849Z" fill="#A5B9CA"/>
+							</svg>
+						</button>
+					</div>
+					<P class="error_text">
+						не те цифры
+					</P>
+				</div>
+				<div class="input_block">
+					<p class="input_block-label">
+						New password
+					</p>
+					<div class="input_block-fieldset">
+						<input type="password" name="password" placeholder="************">
+						<button type="button" class="password_toggler">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M21.0231 10.5466C20.9431 10.4233 19.7548 8.64495 17.6056 7.23079L20.9139 3.92162L19.7356 2.74329L3.50977 18.97L4.6881 20.1483L8.97643 15.86C9.88727 16.1441 10.8914 16.3216 11.9914 16.3216C17.6614 16.3216 20.8806 11.6675 21.0148 11.4683L21.3256 11.0116L21.0231 10.5466ZM11.9906 14.655C11.4139 14.655 10.8698 14.59 10.3506 14.485L11.9398 12.8958C12.1498 12.9533 12.3689 12.9883 12.5981 12.9883C13.9781 12.9883 15.0981 11.87 15.0981 10.4883C15.0981 10.26 15.0631 10.04 15.0056 9.82995L16.3898 8.44579C17.7998 9.30579 18.7889 10.3841 19.2764 10.9891C18.3706 12.0641 15.7914 14.655 11.9906 14.655Z" fill="#A5B9CA"/>
+							<path d="M5.83737 14.2849L7.0482 13.0741C5.9307 12.3266 5.12904 11.4916 4.70487 10.9883C5.59654 9.87495 8.16654 7.15495 11.9915 7.15495C12.3065 7.15495 12.6099 7.17911 12.9074 7.21495L14.3374 5.78495C13.609 5.60245 12.8307 5.48828 11.9915 5.48828C6.31154 5.48828 3.0932 10.3399 2.95987 10.5466L2.6582 11.0116L2.96904 11.4683C3.0407 11.5758 4.03404 13.0058 5.83737 14.2849Z" fill="#A5B9CA"/>
+							</svg>
+						</button>
+					</div>
+					<P class="error_text">
+						не те цифры
+					</P>
+				</div>
+			</div>
+			<h4>
+				Add login via social networks
+			</h4>
+			<div class="social_btns_wrap">
+				<button type="button" class="btn btn-l btn-shadow" disabled="">
+					<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0)">
+					<path d="M29.0002 15.3443C29.0002 14.3247 28.9186 13.2995 28.7447 12.2964H14.791V18.0726H22.7816C22.45 19.9356 21.3846 21.5835 19.8246 22.6308V26.3787H24.5917C27.3912 23.7662 29.0002 19.908 29.0002 15.3443Z" fill="#4285F4"/>
+					<path d="M14.7902 29.9999C18.7801 29.9999 22.1448 28.6716 24.5964 26.3788L19.8292 22.6308C18.5028 23.5458 16.7906 24.0639 14.7956 24.0639C10.9362 24.0639 7.66385 21.4238 6.48971 17.8743H1.57031V21.7379C4.08165 26.8032 9.19674 29.9999 14.7902 29.9999Z" fill="#34A853"/>
+					<path d="M6.48568 17.8743C5.86599 16.0113 5.86599 13.9941 6.48568 12.1311V8.26746H1.57171C-0.526508 12.5059 -0.526508 17.4995 1.57171 21.738L6.48568 17.8743Z" fill="#FBBC04"/>
+					<path d="M14.7902 5.93598C16.8993 5.90291 18.9377 6.70761 20.4652 8.18474L24.6888 3.90217C22.0144 1.35578 18.4648 -0.0441811 14.7902 -8.78003e-05C9.19674 -8.78003e-05 4.08165 3.19668 1.57031 8.26741L6.48428 12.1311C7.65297 8.57607 10.9308 5.93598 14.7902 5.93598Z" fill="#EA4335"/>
+					</g>
+					<defs>
+					<clipPath id="clip0">
+					<rect width="29" height="30" fill="white"/>
+					</clipPath>
+					</defs>
+					</svg>
+					Google (added)
+				</button>
+				<button type="button" class="btn btn-l btn-shadow">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M26.7917 2H3.45833C2.65188 2 2 2.65333 2 3.45833V26.7917C2 27.5967 2.65188 28.25 3.45833 28.25H16.0219V18.1H12.6123V14.126H16.0219V11.2094C16.0219 7.81875 18.0927 5.97104 21.126 5.97104C22.1454 5.96813 23.1662 6.02063 24.1812 6.12708V9.65625H22.0885C20.4435 9.65625 20.1227 10.4408 20.1227 11.5885V14.1188H24.0558L23.5454 18.0927H20.1213V28.25H26.7917C27.5981 28.25 28.25 27.5967 28.25 26.7917V3.45833C28.25 2.65333 27.5981 2 26.7917 2Z" fill="#1A41CC"/>
+					</svg>
+					Facebook (not added)
+				</button>
+			</div>
+			<h4>
+				Enable Google Auth
+			</h4>
+			<div class="google-auth_wrap">
+				<button type="button" class="btn btn-s">
+					<span>
+						Activate
+					</span>
+					<span>
+						<img src="img/google_auth.png" alt="#">
+					</span>
+					Google Authenticator
+				</button>
+			</div>
+			<button class="btn btn-l btn-light">
+				Save setting
+			</button>
+		</form>		
+		
+
+
+	</main>
+
+//= templates/modals.html
+//= templates/footer_auth.html
+
+</div>
+<!-- scripts -->
+	<script src="js/libs.min.js"></script> <!-- main scripts -->
+	<script src="js/main.js"></script> <!-- main scripts -->
+<!-- scripts -->
+</body>

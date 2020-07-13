@@ -1,0 +1,63 @@
+.settings_form {
+	h4 {
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 126.4%;
+		color: #6D788C;
+		margin-bottom: 20px;
+	}
+	.google-auth_wrap {
+		max-width: 380px;
+		margin-bottom: 53px;
+	}
+	.btn-light {
+		padding: 21px 27px;
+	}
+}
+.change_pass-wrap {
+	display: inline-flex;
+	margin-bottom: 40px;
+	background: #FFFFFF;
+	box-shadow: 0px 18px 35px rgba(136, 178, 222, 0.13);
+	border-radius: 8px;
+	padding: 20px;
+	.input_block {
+		margin: 0 10px;
+	}
+}
+
+.social_btns_wrap {
+	display: flex;
+	margin-bottom: 40px;
+	.btn {
+		margin-right: 15px;
+		padding:16px 36px;
+		border: 2px solid #0497FD;
+		&[disabled]{
+			color: #ADB5C4 ;
+			border: 2px solid transparent;
+		}
+	}
+}
+
+
+@media screen and (max-width:510px) {
+	.change_pass-wrap {
+		flex-wrap: wrap;
+		.input_block {
+			width: 100%;
+			margin: 15px 0;
+		}
+	}
+	.social_btns_wrap {
+		flex-wrap: wrap;
+		.btn {
+			width: 100%;
+			margin: 10px 0;
+		}
+	}
+	.settings_form .google-auth_wrap {
+		width: 100%;
+		margin-right: 0;
+	}
+}

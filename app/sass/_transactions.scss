@@ -32,14 +32,7 @@
 		color: #AFC1D0;
 		font-size: 12px;
 	}
-	.system {
-		align-items: flex-start;
-		&_logo {
-			min-width: 24px;
-			height: 24px;
-			margin-right: 9px;
-		}
-	}
+	
 	.currency {
 		color: #AFC1D0;
 		margin-left: 9px;
@@ -57,6 +50,14 @@
 	.table_row {
 		grid-template-columns: 1fr 1fr 1fr 1.5fr 0.5fr;
 		grid-gap: 40px;
+	}
+	.system {
+		align-items: flex-start;
+		&_logo {
+			min-width: 24px;
+			height: 24px;
+			margin-right: 9px;
+		}
 	}
 }
 
@@ -77,6 +78,12 @@
 		&.active {
 			font-weight: 700;
 			color:$middleblue;
+		}
+		&.slick-arrow {
+			background-color: #064DC8;
+			&:hover {
+				opacity:.5;
+			}
 		}
 	}
 }
@@ -127,8 +134,12 @@
 			margin-right: 0;
 			margin-bottom: 10px;
 			.paw-current_value {
-				justify-content: center;
+				justify-content: flex-start;
 				
+			}
+			.paw-list-item {
+				text-align: left;
+				padding: 10px 25px;
 			}
 		}
 	}

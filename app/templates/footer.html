@@ -5,11 +5,40 @@
 					<img src="img/logo.svg" alt="logo">
 				</a>
 				<div class="lang_wrap">
-					<span class="lang_flag"></span>
-					<select name="lang_select" class="lang_select">
-						<option value="en">English</option>
-						<option value="ru">Russian</option>
-					</select>
+					<div class="paw-select lang_select" data-multiple='false' data-placeholder='Lang'>
+						<button class="paw-current_value" type="button" data-set='0'>
+							<span class="lang_flag">
+								<img src="img/eng-flag.png" alt="eng">
+							</span>
+							English
+						</button>
+						<ul class="paw-list hidden">
+							<li>
+								<a href="#" class='paw-list-item' value="1">
+			 						<span class="lang_flag">
+			 							<img src="img/chaineese-flag.png" alt="Chi">
+			 						</span>
+			 						Chineese
+			 					</a>
+			 				</li>
+							<li>
+								<a href="#" class='paw-list-item' value="2">
+			 						<span class="lang_flag">
+			 							<img src="img/eng-flag.png" alt="alb">
+			 						</span>
+			 						Albanian
+			 					</a>
+			 				</li>
+							<li>
+								<a href="#" class='paw-list-item' value="2">
+			 						<span class="lang_flag">
+			 							<img src="img/eng-flag.png" alt="alb">
+			 						</span>
+			 						Albanian
+			 					</a>
+			 				</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="footer-nav">

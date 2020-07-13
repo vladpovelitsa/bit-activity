@@ -1,0 +1,145 @@
+.refferals_block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 65px;
+	.input_block {
+		margin-bottom: 0;
+		max-width: 420px;
+		width: 100%;
+		border:5px solid #fff;
+		border-radius: 8px;
+		box-shadow: 0px 18px 35px rgba(136, 178, 222, 0.13);
+	}
+}
+
+.refferals_info {
+	display: flex; 
+	align-items: flex-start;
+	list-style:none;
+	li {
+		margin-left: 70px;
+	}
+	&-label {
+		color: #6D788C;
+		font-size: 13px;
+		font-weight: 700;
+		margin-bottom: 6px;
+	}
+	&-value {
+		color: $middleblue;
+		font-size: 20px;
+		font-weight: 700;
+	}
+}
+
+.table_history {
+	margin-bottom: 60px;
+	max-width: 625px;
+	.table_row {
+		grid-template-columns: 1.5fr 1fr 1fr 1fr;
+		grid-gap: 20px;
+	}
+}
+
+.table {
+	.partner {
+		display: flex;
+		align-items: center;
+		color:$middleblue;
+		img {
+			margin-right: 9px;
+		}
+	}
+}
+
+.lk_subheader {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 126.4%;
+	color: #6D788C;
+	margin-bottom: 40px;
+}
+.history_wrap {
+	margin-bottom: 84px;
+}
+
+.banners_item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 30px;
+	img {
+		border-radius: 8px;
+	}
+	.input_block {
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 0;
+
+		&-fieldset {
+			max-width: 277px;
+			width: 100%;
+			border:5px solid #fff;
+			border-radius: 8px;
+			box-shadow: 0px 18px 35px rgba(136, 178, 222, 0.13);
+		}
+		&-label {
+			margin-right: 17px;
+			font-weight: bold;
+			font-size: 15px;
+		}
+	
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	.refferals_block {
+		flex-direction: column;
+		align-items: flex-start;
+		.input_block {
+			margin-bottom: 30px;
+		}
+	}
+	.refferals_info {
+		li {
+			margin-left: 0;
+			margin-right: 30px;
+		}
+	}
+	.banners_item {
+		flex-wrap: wrap;
+		img {
+			// max-width: 200px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.refferals_info {
+		flex-wrap: wrap;
+		justify-content: space-between;
+		li {
+			margin-top: 15px;
+			width: 48%;
+			margin-right: 0;
+		}
+	}
+	.lk_subheader {
+		margin-bottom: 20px;
+	}
+	.history_wrap {
+		margin-bottom: 40px;
+	}
+	.banners_item {
+		padding-bottom: 25px;
+		border-bottom: 1px dashed $middleblue;
+		.input_block {
+			flex-direction: column;
+			align-items: flex-start;
+			margin-bottom: 0;
+		}
+	}
+
+}

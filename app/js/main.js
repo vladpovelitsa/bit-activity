@@ -138,3 +138,5 @@ function setNumber(){
 }
 
 document.addEventListener('click', setNumber)
+
+initPawSelect('.paw-select');

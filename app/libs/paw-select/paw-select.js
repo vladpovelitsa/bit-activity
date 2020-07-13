@@ -13,6 +13,7 @@ function pawSelect(e) {
 
 		if (e.target.classList.contains('paw-current_value')) {
 			e.target.nextElementSibling.classList.toggle('hidden')
+			e.target.parentNode.classList.toggle('active')
 			return
 		}
 
@@ -20,7 +21,7 @@ function pawSelect(e) {
 		// выбор первого элемента списка
 
 		else if(e.target.classList.contains('paw-list-item') && counter == 0) {
-			selected.innerText = e.target.innerText
+			selected.innerHTML = e.target.innerHTML
 			selected.value = e.target.value
 
 			if (multiple != 'true') {
@@ -67,6 +68,9 @@ document.addEventListener('click', function() {
 	if (!event.target.classList.contains('paw-current_value')) {
 		document.querySelectorAll('.paw-list').forEach(function(item) {
 			item.classList.add('hidden');
+		})
+		document.querySelectorAll('.paw-select').forEach(function(item) {
+			item.classList.remove('active');
 		})
 	}
 })

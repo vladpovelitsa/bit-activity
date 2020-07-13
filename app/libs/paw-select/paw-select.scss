@@ -1,7 +1,5 @@
 .paw-select {
 	position: relative;
-	min-width: 150px;	
-	font-size: 12px;
 }
 .hidden {
 	display: none !important;
@@ -14,7 +12,6 @@
 	list-style:none;
 	display: flex;
 	flex-direction: column;
-	// width: 100%;
 	li {
 		display: flex;
 		white-space: nowrap;

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>
+		Bit Activity
+	</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="fav.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+<div class="wrapper">
+//= templates/header_auth.html
+//= templates/statusbar.html
+	
+	<section class="statistic_counters statistic_counters-page gray_bg center">
+		<h2 class="section_heading">
+			Detais statistics
+		</h2>
+		<div class="statistic_counters-list">
+			<div class="statistic_counters-item">
+				<p class="statistic_counters-number">
+					240
+				</p>
+				<p class="statistic_counters-name">
+					Participants
+				</p>
+			</div>
+			<div class="statistic_counters-item">
+				<p class="statistic_counters-number">
+					5.000323btc
+				</p>
+				<p class="statistic_counters-name">
+					On the account
+				</p>
+			</div>
+			<div class="statistic_counters-item">
+				<p class="statistic_counters-number">
+					3.0323btc
+				</p>
+				<p class="statistic_counters-name">
+					Withdraw all
+				</p>
+			</div>
+			<div class="statistic_counters-item">
+				<p class="statistic_counters-number">
+					15
+				</p>
+				<p class="statistic_counters-name">
+					Days from start
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="grahps center">
+		<div class="grahps-item">
+			<canvas id="canvas" width="400" height="400"></canvas>
+		</div>
+		<div class="grahps-item">
+			<canvas id="canvas2" width="400" height="400"></canvas>
+		</div>
+		<p>
+			To use Stacker you need to have an Airtable base. If you don't have an Airtable base you can sign up for Airtable and create a base. They have loads of templates to get you started. You don't need to be on a paid Airtable plan to use Stacker
+		</p>
+	</section>
+
+	<section class="operations-top center">
+		<h2 class="section_heading">
+			Our tops
+		</h2>
+		<div class="operations">
+			<div class="operations_item">
+				<h5>
+					By all deposits
+				</h5>
+				<div class="table table_top">
+				
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>
+						</div>
+						<div class="table_cell" title="date">
+							<span class='counter'>
+								12 deposits
+							</span>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99233.099320
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>
+						</div>
+						<div class="table_cell" title="date">
+							<span class='counter'>
+								12 deposits
+							</span>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99233.099320
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>
+						</div>
+						<div class="table_cell" title="date">
+							<span class='counter'>
+								12 deposits
+							</span>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99233.099320
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>
+						</div>
+						<div class="table_cell" title="date">
+							<span class='counter'>
+								12 deposits
+							</span>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99233.099320
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>
+						</div>
+						<div class="table_cell" title="date">
+							<span class='counter'>
+								12 deposits
+							</span>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99233.099320
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="operations_item">
+				<h5>
+					By count partners
+				</h5>
+				<div class="table table_top">
+				
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>
+						</div>
+						<div class="table_cell" title="date">
+							<span class='counter'>
+								12 deposits
+							</span>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 233.00
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>
+						</div>
+						<div class="table_cell" title="date">
+							<span class='counter'>
+								12 deposits
+							</span>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 233.00
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>
+						</div>
+						<div class="table_cell" title="date">
+							<span class='counter'>
+								12 deposits
+							</span>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 233.00
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>
+						</div>
+						<div class="table_cell" title="date">
+							<span class='counter'>
+								12 deposits
+							</span>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 233.00
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>
+						</div>
+						<div class="table_cell" title="date">
+							<span class='counter'>
+								12 deposits
+							</span>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 233.00
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="operations_item">
+				<h5>
+					Active countries
+				</h5>
+				<div class="table table_top">
+				
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>
+						</div>
+						<div class="table_cell" title="date">
+							<span class='counter'>
+								12 deposits
+							</span>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 999.934
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>
+						</div>
+						<div class="table_cell" title="date">
+							<span class='counter'>
+								12 deposits
+							</span>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 999.934
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>
+						</div>
+						<div class="table_cell" title="date">
+							<span class='counter'>
+								12 deposits
+							</span>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 999.934
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>
+						</div>
+						<div class="table_cell" title="date">
+							<span class='counter'>
+								12 deposits
+							</span>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 999.934
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>
+						</div>
+						<div class="table_cell" title="date">
+							<span class='counter'>
+								12 deposits
+							</span>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 999.934
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="operations-last gray_bg center">
+		<h2 class="section_heading">
+			Last transaction
+		</h2>
+		<div class="operations">
+			<div class="operations_item">
+				<h5>
+					Deposit
+				</h5>
+				<div class="table table_deposits">
+				
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+					
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+					
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+					
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+					
+					
+				</div>
+			</div>
+			<div class="operations_item">
+				<h5>
+					Withdraw
+				</h5>
+				<div class="table table_withdraw">
+				
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+					
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+					
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+					
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+					
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="operations_item">
+				<h5>
+					Last registrations
+				</h5>
+				<div class="table table_reg">
+					<article class="table_row">
+						<div class="table_cell" title="Partner">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>	
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+					</article>
+					<article class="table_row">
+						<div class="table_cell" title="Partner">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>	
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+					</article>
+					<article class="table_row">
+						<div class="table_cell" title="Partner">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>	
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+					</article>
+					<article class="table_row">
+						<div class="table_cell" title="Partner">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>	
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+					</article>
+					<article class="table_row">
+						<div class="table_cell" title="Partner">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>	
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+					</article>
+					<article class="table_row">
+						<div class="table_cell" title="Partner">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>	
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+	section.operations.
+//= templates/cta.html
+//= templates/systems.html
+//= templates/modals.html
+//= templates/footer_auth.html
+</div>
+<!-- scripts -->
+	<script src="js/libs.min.js"></script> <!-- main scripts -->
+	<script src="js/main.js"></script> <!-- main scripts -->
+<!-- scripts -->
+</body>

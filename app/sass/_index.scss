@@ -16,7 +16,7 @@
 		line-height: 1.5;
 		color: #053786;
 		max-width: 450px;
-		margin-bottom: 30px;
+		margin-bottom: 42px;
 	}
 	&_cta {
 		display: inline-flex;
@@ -27,6 +27,7 @@
 		opacity:.3;
 		display: flex;
 		align-items: center;
+		font-size: 14px;
 		svg {
 			margin: .3;
 			margin: -2px 6px 0 0;
@@ -39,7 +40,7 @@
 }
 
 .plans_section {
-	padding-top: 48px;
+	padding-top: 50px;
 	padding-bottom: 30px;
 	.plans {
 		margin-bottom: 36px;
@@ -50,7 +51,7 @@
 	color: $middleblue;
 	font-size: 30px;
 	line-height: 126.4%;
-	margin-bottom: 32px;
+	margin-bottom: 34px;
 }
 
 .section_desc {
@@ -58,16 +59,16 @@
 	line-height: 140%;
 	color: #6D788C;
 	max-width: 565px;
-	margin-bottom: 40px;
+	margin-bottom: 45px;
 }
 
 .currency_selection {
 	display: flex;
 	align-items: center;
-	margin-bottom: 33px;
+	margin-bottom: 37px;
 
 	p {
-		margin-right: 15px;
+		margin-right: 20px;
 		font-weight: bold;
 		font-size: 20px;
 		line-height: 1.26;
@@ -120,17 +121,29 @@
 }
 
 .profit {
-	padding-top: 40px;
+	padding-top: 45px;
 	padding-bottom: 80px;
 	.section_heading {
 		color: #6D788C;
 	}
 	.potential_get {
 		margin-left: 0;
-		max-width: 965px;
+		max-width: 970px;
 		&-item {
 			margin-left: 0;
-			max-width: 23%;
+			max-width: 19.5%;
+			position: relative;
+			&:before {
+				content:"";
+				display: block;
+				position: absolute;
+				width: 6px;
+				height: 6px;
+				background: #1DF032;
+				top:15px;
+				right: 15px;
+				border-radius:50%;
+			}
 		}
 	}
 }
@@ -138,7 +151,7 @@
 .profit_form {
 	display: flex;
 	align-items: center;
-	margin-bottom: 30px;
+	margin-bottom: 22px;
 	.input_block {
 		margin-right: 22px;
 		margin-bottom: 0;
@@ -205,15 +218,14 @@
 }
 
 .advantages {
-	padding-top: 63px;
-	padding-bottom: 110px;
+	padding-top: 65px;
+	padding-bottom: 113px;
 	.section_heading {
-		margin-bottom: 100px;
+		margin-bottom: 102px;
 	}
 	&_content {
 		display: flex;
 		justify-content: space-between;
-
 	}
 	&_list {
 		display: grid;
@@ -282,6 +294,7 @@
 	padding-top: 58px;
 	.section_heading {
 		color:#6D788C;
+		margin-bottom: 27px;
 	}
 	.section_desc {
 		max-width: 310px;
@@ -290,7 +303,7 @@
 		display: flex;
 		justify-content: space-between;
 		max-width: 720px;
-		margin: -139px 0 -60px auto;
+		margin: -132px 0 -60px auto;
 		
 		&-item {
 			width: 32%;
@@ -351,6 +364,9 @@
 	.section_desc {
 		max-width: 540px;
 	}
+	.section_heading {
+		margin-bottom: 50px;
+	}
 	&_subheading {
 		font-weight: bold;
 		font-size: 20px;
@@ -370,6 +386,7 @@
 			margin-bottom: 23px;
 		}
 		h6 {
+			font-size: 20px;
 			margin-bottom: 13px;
 			color:$middleblue;
 		}
@@ -384,9 +401,10 @@
 
 .statistic {
 	padding-top: 75px;
-
+	padding-bottom: 0px;
 	.section_heading {
 		color: #6D788C;
+		margin-bottom: 50px;
 	}
 	.filters {
 		margin-bottom: 43px;
@@ -427,7 +445,7 @@
 .operations {
 	display: flex;
 	justify-content: flex-start;
-	padding-bottom: 48px;
+	padding-bottom: 30px;
 }
 .operations_item {
 	max-width: 350px;

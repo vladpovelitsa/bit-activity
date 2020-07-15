@@ -41,8 +41,6 @@
 					Contacts
 				</a></li>
 				<li class="lang_wrap">
-
-
 					<div class="paw-select lang_select" data-multiple='false' data-placeholder='Lang'>
 						<button class="paw-current_value" type="button" data-set='0'>
 							<span class="lang_flag">
@@ -77,9 +75,6 @@
 			 				</li>
 						</ul>
 					</div>
-
-
-
 				</li>
 			</ul>
 
@@ -107,8 +102,8 @@
 		</nav>
 	</header>
 
-	<section class="statusbar center">
-		<ul class="statusbar_list runline">
+	<marquee direction="left" scrollamount="8" class="statusbar center">
+		<ul class="statusbar_list ">
 			<li>
 				<span class="statusbar_list-currency">
 					<svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -253,7 +248,7 @@
 				</span>
 			</li>
 		</ul>
-	</section>
+	</marquee>
 	<div class="center">
 		<h2>
 			Pages:
@@ -271,7 +266,8 @@
 			<li><a href="wallets.html">wallets</a></li>
 			<li><a href="add-wallet.html">add wallet</a></li>
 			<li><a href="settings.html">settings</a></li>
-
+			<hr>
+			<li><a href="home.html">Home page</a></li>
 		</ol>
 		<hr>
 		<hr>
@@ -391,13 +387,13 @@
 				<p class="input_block-label">
 					Your investment
 				</p>
-				<div class="input_block-fieldset">
+				<label class="input_block-fieldset">
 					<input type="number" value="0.9999942424">
 					<select>
 						<option value="USD">USD</option>
 						<option value="RUB">RUB</option>
 					</select>
-				</div>
+				</label>
 				<P class="error_text">
 					не те цифры
 				</P>
@@ -407,13 +403,13 @@
 				<p class="input_block-label">
 					Your investment
 				</p>
-				<div class="input_block-fieldset">
+				<label class="input_block-fieldset">
 					<input type="number" value="0.9999942424">
 					<select>
 						<option value="USD">USD</option>
 						<option value="RUB">RUB</option>
 					</select>
-				</div>
+				</label>
 				<P class="error_text">
 					не те цифры
 				</P>
@@ -423,19 +419,17 @@
 				<p class="input_block-label">
 					Your investment
 				</p>
-				<div class="input_block-fieldset">
+				<label class="input_block-fieldset">
 					<input type="number" value="0.9999942424">
 					<select>
 						<option value="USD">USD</option>
 						<option value="RUB">RUB</option>
 					</select>
-				</div>
+				</label>
 				<P class="error_text">
 					не те цифры
 				</P>
 			</div>
-
-	
 		<h2>
 			Modals
 		</h2>
@@ -459,6 +453,123 @@
 				Notification open
 			</button></li>
 		</ol>
+
+		<h2>
+			Systems
+		</h2>
+		<ol>
+			<li>
+				<span class="system">
+					<span class="system_logo">
+						<img src="img/bitcoin.svg" alt="">
+					</span>
+					<span class="system_name">
+						Bitcoin
+					</span>
+				</span>
+			</li>
+			<li>
+				<span class="system">
+					<span class="system_logo">
+						<img src="img/bitcoincash.svg" alt="">
+					</span>
+					<span class="system_name">
+						BitcoinCash
+					</span>
+				</span>
+			</li>
+			
+			<li>
+				<span class="system">
+					<span class="system_logo">
+						<img src="img/dashcoin.svg" alt="">
+					</span>
+					<span class="system_name">
+						dashcoin
+					</span>
+				</span>
+			</li>
+			<li>
+				<span class="system">
+					<span class="system_logo">
+						<img src="img/dogecoin.svg" alt="">
+					</span>
+					<span class="system_name">
+						Dogeoin
+					</span>
+				</span>
+			</li>
+			<li>
+				<span class="system">
+					<span class="system_logo">
+						<img src="img/ethereum.svg" alt="">
+					</span>
+					<span class="system_name">
+						Ethereum
+					</span>
+				</span>
+			</li>
+			<li>
+				<span class="system">
+					<span class="system_logo">
+						<img src="img/litecoin.svg" alt="">
+					</span>
+					<span class="system_name">
+						Litecoin
+					</span>
+				</span>
+			</li>
+			<li>
+				<span class="system">
+					<span class="system_logo">
+						<img src="img/payeer.svg" alt="">
+					</span>
+					<span class="system_name">
+						Payeer
+					</span>
+				</span>
+			</li>
+			<li>
+				<span class="system">
+					<span class="system_logo">
+						<img src="img/perfectmoney.svg" alt="">
+					</span>
+					<span class="system_name">
+						Perfectmoney
+					</span>
+				</span>
+			</li>
+			<li>
+				<span class="system">
+					<span class="system_logo">
+						<img src="img/ripple.svg" alt="">
+					</span>
+					<span class="system_name">
+						Ripple
+					</span>
+				</span>
+			</li>
+			<li>
+				<span class="system">
+					<span class="system_logo">
+						<img src="img/zcash.svg" alt="">
+					</span>
+					<span class="system_name">
+						Zcash
+					</span>
+				</span>
+			</li>
+			<li>
+				<span class="system">
+					<span class="system_logo">
+						<img src="img/tether.svg" alt="">
+					</span>
+					<span class="system_name">
+						Tether
+					</span>
+				</span>
+			</li>
+		</ol>
 	</div>
 	
 	<div class="modal" id="reg">
@@ -477,9 +588,9 @@
 					<p class="input_block-label">
 						Your email
 					</p>
-					<div class="input_block-fieldset">
+					<label class="input_block-fieldset">
 						<input type="email" name="email" placeholder="example@mail.com">
-					</div>
+					</label>
 					<P class="error_text">
 						не те цифры
 					</P>
@@ -488,9 +599,9 @@
 					<p class="input_block-label">
 						Your name
 					</p>
-					<div class="input_block-fieldset">
+					<label class="input_block-fieldset">
 						<input type="text" name="name" placeholder='Jhon Doe'>
-					</div>
+					</label>
 					<P class="error_text">
 						не те цифры
 					</P>
@@ -499,9 +610,9 @@
 					<p class="input_block-label">
 						Your cryptowallet
 					</p>
-					<div class="input_block-fieldset">
+					<label class="input_block-fieldset">
 						<input type="text" name="cryptowallet" placeholder="0x098989493824982938498234">
-					</div>
+					</label>
 					<P class="error_text">
 						не те цифры
 					</P>
@@ -510,9 +621,9 @@
 					<p class="input_block-label">
 						Secret question
 					</p>
-					<div class="input_block-fieldset">
+					<label class="input_block-fieldset">
 						<input type="text" name="question" placeholder="How mush money in my bag?">
-					</div>
+					</label>
 					<P class="error_text">
 						не те цифры
 					</P>
@@ -521,7 +632,7 @@
 					<p class="input_block-label">
 						Your password
 					</p>
-					<div class="input_block-fieldset">
+					<label class="input_block-fieldset">
 						<input type="password" name="password" placeholder="************">
 						<button type="button" class="password_toggler">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -529,7 +640,7 @@
 							<path d="M5.83737 14.2849L7.0482 13.0741C5.9307 12.3266 5.12904 11.4916 4.70487 10.9883C5.59654 9.87495 8.16654 7.15495 11.9915 7.15495C12.3065 7.15495 12.6099 7.17911 12.9074 7.21495L14.3374 5.78495C13.609 5.60245 12.8307 5.48828 11.9915 5.48828C6.31154 5.48828 3.0932 10.3399 2.95987 10.5466L2.6582 11.0116L2.96904 11.4683C3.0407 11.5758 4.03404 13.0058 5.83737 14.2849Z" fill="#A5B9CA"/>
 							</svg>
 						</button>
-					</div>
+					</label>
 					<P class="error_text">
 						не те цифры
 					</P>
@@ -596,9 +707,9 @@
 					<p class="input_block-label">
 						Your email
 					</p>
-					<div class="input_block-fieldset">
+					<label class="input_block-fieldset">
 						<input type="email" name="email" placeholder="example@mail.com">
-					</div>
+					</label>
 					<P class="error_text">
 						не те цифры
 					</P>
@@ -607,7 +718,7 @@
 					<p class="input_block-label">
 						Your password
 					</p>
-					<div class="input_block-fieldset">
+					<label class="input_block-fieldset">
 						<input type="password" name="password" placeholder="************">
 						<button type="button" class="password_toggler">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -615,7 +726,7 @@
 							<path d="M5.83737 14.2849L7.0482 13.0741C5.9307 12.3266 5.12904 11.4916 4.70487 10.9883C5.59654 9.87495 8.16654 7.15495 11.9915 7.15495C12.3065 7.15495 12.6099 7.17911 12.9074 7.21495L14.3374 5.78495C13.609 5.60245 12.8307 5.48828 11.9915 5.48828C6.31154 5.48828 3.0932 10.3399 2.95987 10.5466L2.6582 11.0116L2.96904 11.4683C3.0407 11.5758 4.03404 13.0058 5.83737 14.2849Z" fill="#A5B9CA"/>
 							</svg>
 						</button>
-					</div>
+					</label>
 					<P class="error_text">
 						не те цифры
 					</P>
@@ -687,9 +798,9 @@
 				<p class="input_block-label">
 					Token
 				</p>
-				<div class="input_block-fieldset">
+				<label class="input_block-fieldset">
 					<input type="text" name="token">
-				</div>
+				</label>
 				<P class="error_text">
 					не те цифры
 				</P>
@@ -728,10 +839,10 @@
 				Get secret code
 			</h6>
 			<div class="input_block">
-				<div class="input_block-fieldset">
+				<label class="input_block-fieldset">
 					<input type="text" name="code" value="ASS&FU8788874" disabled="">
 					<button class="btn btn-white btn-s btn-copy">copy</button>
-				</div>
+				</label>
 				<P class="error_text">
 					не те цифры
 				</P>
@@ -740,9 +851,9 @@
 				<p class="input_block-label modal_text">
 					Enter your token
 				</p>
-				<div class="input_block-fieldset">
+				<label class="input_block-fieldset">
 					<input type="text" name="token">
-				</div>
+				</label>
 				<P class="error_text">
 					не те цифры
 				</P>

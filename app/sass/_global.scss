@@ -129,23 +129,25 @@
 		white-space: nowrap;
 		max-width: 100%;
 		position: relative;
-		
-		&:before {
-			display: block;
-			position: absolute;
-			left:10px;
-			top:50%;
-			transform:translate(0,-50%);
-			width: 10px;
-			height: 10px;
-			border: 1px solid #fff;
-			border-left: none;
-			border-bottom: none;
-			border-radius:50%;
-			animation: loadingBtn 1s infinite linear;
+		span {
+			position: relative;
+			&:before {
+				display: block;
+				position: absolute;
+				left:-20px;
+				top:50%;
+				transform:translate(0,-50%);
+				width: 10px;
+				height: 10px;
+				border: 1px solid #fff;
+				border-left: none;
+				border-bottom: none;
+				border-radius:50%;
+				animation: loadingBtn 1s infinite linear;
+			}	
 		}
 		&-loading {
-			&:before {
+			span:before {
 				content:'';
 			}
 		}
@@ -208,7 +210,7 @@
 					fill:#fff;
 				}
 			}
-			&:before {
+			span:before {
 				border-color:$middleblue;
 			}
 		}
@@ -521,6 +523,15 @@
 				color:$middleblue;
 			}
 		}
+		&-time {
+			.input_block-fieldset {
+				justify-content: flex-start;
+				min-width: 190px;
+				input {
+					max-width:50px;
+				}
+			}
+		}
 	}
 // input_block
 
@@ -559,7 +570,7 @@
 		padding: 8px 16px;
 		font-size: 12px;
 		.paw-current_value {
-			border-radius: 8px 8px 0 0;
+			border-radius: 0;
 			border: none;
 			display: flex;
 			padding: 0 10px 0 0;
@@ -642,16 +653,33 @@
 			width: 100%;
 			border-radius: 0 0 8px 8px;
 			overflow:hidden;
-			padding-top: 9px;
 			&-item {
 				background: #fff;
-				padding:9px 20px;
+				padding:9px 60px 9px 20px;
 				display: flex;
 				align-items: center;
 				white-space:nowrap;
 				border:none;
 				position: relative;
 				width: 100%;
+				justify-content: space-between;
+				.system {
+					width: 50%;
+					margin-right: 10px;
+					.system_name {
+						text-overflow: ellipsis;
+						overflow:hidden;
+						position: relative;
+						
+					}
+				}
+				&:hover {
+					.system {
+						.system_name {
+							overflow:visible;
+						}
+					}
+				}
 				&::after {
 					content: "";
 					display: block;
@@ -671,10 +699,24 @@
 				&:nth-of-type(odd) {
 					.paw-list-item {
 						background: #F9FBFD;
+						&:hover {
+							.system {
+								.system_name {
+									background: #F9FBFD;
+								}
+							}
+						}
 					}
 				}
 				&:last-of-type {
 					.paw-list-item {
+						&:hover {
+							.system {
+								.system_name {
+									background: #fff
+								}
+							}
+						}
 					}
 				}
 			}

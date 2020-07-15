@@ -140,3 +140,29 @@ function setNumber(){
 document.addEventListener('click', setNumber)
 
 initPawSelect('.paw-select');
+
+$('.systems_slider').slick({
+  infinite: true,
+  autoplay:true,
+  autoplaySpeed: 3000,
+  slidesToShow: 8,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1180,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});

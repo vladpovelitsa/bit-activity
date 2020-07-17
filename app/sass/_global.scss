@@ -304,7 +304,7 @@
 		display: flex;
 		align-items: center;
 		text-decoration: underline;
-		
+		font-weight: 700;
 		svg {
 			fill:$middleblue;
 			transition:0.5s;
@@ -654,6 +654,11 @@
 			color:$middleblue;
 			font-weight: 700;
 			background: url("data:image/svg+xml,%3Csvg width='16' height='8' viewBox='0 0 16 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L8 6.6L15 1' stroke='%2300A0FB'/%3E%3C/svg%3E%0A") calc(100% - 10px) 50%  no-repeat;
+			white-space: unset;
+			.system {
+				width: 135px;
+				margin-right: 10px;
+			}
 		}
 		.paw-list {
 			width: 100%;
@@ -661,31 +666,32 @@
 			overflow:hidden;
 			&-item {
 				background: #fff;
-				padding:9px 60px 9px 20px;
+				padding:9px 55px 9px 20px;
 				display: flex;
 				align-items: center;
-				white-space:nowrap;
+				// white-space:nowrap;
 				border:none;
 				position: relative;
 				width: 100%;
 				justify-content: space-between;
 				.system {
-					width: 50%;
+					width: 135px;
 					margin-right: 10px;
-					.system_name {
-						text-overflow: ellipsis;
-						overflow:hidden;
-						position: relative;
+					text-align: left;
+					// .system_name {
+					// 	text-overflow: ellipsis;
+					// 	overflow:hidden;
+					// 	position: relative;
 						
-					}
+					// }
 				}
-				&:hover {
-					.system {
-						.system_name {
-							overflow:visible;
-						}
-					}
-				}
+				// &:hover {
+				// 	.system {
+				// 		.system_name {
+				// 			overflow:visible;
+				// 		}
+				// 	}
+				// }
 				&::after {
 					content: "";
 					display: block;
@@ -790,6 +796,12 @@
 		&:last-of-type {
 			margin-right: 0;
 			margin-left: auto;
+		}
+	}
+
+	.paw-list-item {
+		* {
+			pointer-events: none;
 		}
 	}
 // paw_select

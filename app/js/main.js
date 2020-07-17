@@ -92,7 +92,7 @@ document.addEventListener('click', notifications)
 
 function navControls() {
     var elem = event.target
-    var nav = document.querySelector('nav')
+    var nav = document.querySelector('.nav')
     if (elem.classList.contains('show_menu')) {
         elem.classList.toggle('active')
         nav.classList.toggle('active')
@@ -167,122 +167,128 @@ $('.systems_slider').slick({
   ]
 });
 
+// alert(window.innerWidth)
 
-var ctx = document.getElementById('canvas').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-        datasets: [{
-          label: 'Short deposits',
-          backgroundColor: '#1F78B4',
-          borderColor: '#1F78B4',
-          data: [
-            1,
-            25,
-            65,
-            33,
-            57,
-            21,
-            10
-          ],
-          fill: false,
-        }, {
-          label: 'Balance deposit',
-          fill: false,
-          backgroundColor: '#B2DF8A',
-          borderColor: '#B2DF8A',
-          data: [
-            10,
-            15,
-            12,
-            14,
-            17,
-            25,
-            56
-          ],
-        }]
-    },
-    options: {
-        title: {
-          display:'true',
-          text:'Deposits',
-          fontSize: 30,
-          fontFamily:"'Circe', sans-serif",
-          fontColor:'#0497FD',
-          padding: 40,
-        },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        },
-        legend: {
-            display: true,
-            position:'bottom',
-            align:'start',
-        },
-        layout: {
-            padding: {
-                left: 0,
-                right: 0,
-                top: 0,
-                bottom: 20,
-            }
-        }
-    }
-});
-var ctx2 = document.getElementById('canvas2').getContext('2d');
-var myChart = new Chart(ctx2, {
-    type: 'line',
-    data: {
-      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-        datasets: [{
-          label: 'Project balance (USD)',
-          backgroundColor: '#1F78B4',
-          borderColor: '#1F78B4',
-          data: [
-            10,
-            15,
-            35,
-            43,
-            57,
-            61,
-            90
-          ],
-          fill: false,
-        },]
-    },
-    options: {
-        title: {
-          display:'true',
-          text:'Project value',
-          fontSize: 30,
-          fontFamily:"'Circe', sans-serif",
-          fontColor:'#0497FD',
-          padding: 40,
-        },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        },
-        legend: {
-            display: true,
-            position:'bottom',
-            align:'start',
-        },
-        layout: {
-            padding: {
-                left: 0,
-                right: 0,
-                top: 0,
-                bottom: 20,
-            }
-        }
-    }
-});
+
+if (document.getElementById('canvas')) {
+  var ctx = document.getElementById('canvas').getContext('2d');
+  var myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [{
+            label: 'Short deposits',
+            backgroundColor: '#1F78B4',
+            borderColor: '#1F78B4',
+            data: [
+              1,
+              25,
+              65,
+              33,
+              57,
+              21,
+              10
+            ],
+            fill: false,
+          }, {
+            label: 'Balance deposit',
+            fill: false,
+            backgroundColor: '#B2DF8A',
+            borderColor: '#B2DF8A',
+            data: [
+              10,
+              15,
+              12,
+              14,
+              17,
+              25,
+              56
+            ],
+          }]
+      },
+      options: {
+          title: {
+            display:'true',
+            text:'Deposits',
+            fontSize: 30,
+            fontFamily:"'Circe', sans-serif",
+            fontColor:'#0497FD',
+            padding: 40,
+          },
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero: true
+                  }
+              }]
+          },
+          legend: {
+              display: true,
+              position:'bottom',
+              align:'start',
+          },
+          layout: {
+              padding: {
+                  left: 0,
+                  right: 0,
+                  top: 0,
+                  bottom: 20,
+              }
+          }
+      }
+  });  
+}
+if (document.getElementById('canvas2')) {
+  var ctx2 = document.getElementById('canvas2').getContext('2d');
+  var myChart = new Chart(ctx2, {
+      type: 'line',
+      data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [{
+            label: 'Project balance (USD)',
+            backgroundColor: '#1F78B4',
+            borderColor: '#1F78B4',
+            data: [
+              10,
+              15,
+              35,
+              43,
+              57,
+              61,
+              90
+            ],
+            fill: false,
+          },]
+      },
+      options: {
+          title: {
+            display:'true',
+            text:'Project value',
+            fontSize: 30,
+            fontFamily:"'Circe', sans-serif",
+            fontColor:'#0497FD',
+            padding: 40,
+          },
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero: true
+                  }
+              }]
+          },
+          legend: {
+              display: true,
+              position:'bottom',
+              align:'start',
+          },
+          layout: {
+              padding: {
+                  left: 0,
+                  right: 0,
+                  top: 0,
+                  bottom: 20,
+              }
+          }
+      }
+  });  
+}

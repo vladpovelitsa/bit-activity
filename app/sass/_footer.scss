@@ -18,13 +18,14 @@
 	}
 
 	.logo {
-		margin-bottom: 25px;
+		margin-bottom: 15px;
 		margin-right: 73px;
+		margin-left: 16px;
 	}
 
 	&-nav {
 		display: flex;
-		padding-top: 23px;
+
 		ul {
 			font-size: 14px;
 			list-style: none;
@@ -41,7 +42,7 @@
 		}
 	}
 	&_links {
-		padding-top: 12px;
+		padding-top: 0px;
 
 		.login_btns {
 			margin-bottom: 27px;
@@ -60,10 +61,14 @@
 					color:$lightblue;
 				}
 			}
+			li {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.social_links {
-		padding-top: 17px;
+		margin-left: 16px;
+		margin-bottom: 15px;
 	}
 }
 
@@ -77,29 +82,28 @@
 	.footer_links {
 		display: flex;
 		margin-left: 10px;
+		flex-direction: column;
 		.login_btns {
 			flex-direction: column-reverse;
+			margin-bottom: auto;
+			
 			.btn {
 				margin-bottom: 15px;
 				margin-left: 0;
 			}
 		}
 		.footer_links-list {
-			margin-left: 15px;
+			margin-left: 0px;
+			margin-top: 20px;
 			grid-template-columns: 1fr;
 			grid-gap: 15px;
 		}
 	}
-	.footer-nav {
-		display: none;
-		
+	.footer .user {
+		margin-right: 0;
+		margin-left: 0;
 	}
-	.footer {
-		.social_links {
-			margin-left: auto;
-			
-		}
-	}
+
 }
 
 @media screen and (max-width: 520px) {
@@ -109,15 +113,32 @@
 		&_links {
 			justify-content: space-between;
 			margin-left: 0;
-			margin-top: 15px;
-			width: 100%;
 			&-list {
 				text-align: right;
 			}
+			
 		}
+		.login_btns {
+			margin-top: 0;
+			.btn {
+				margin-right: 0;
+			}
+		}
+		.logo {
+			margin-right: 10px;
+		}
+	}
+	.footer-nav {
+		display: none;
 	}
 	.tg_link {
 		bottom: 20px;
 		right: 20px;
+	}
+	.footer .user .avatar_wrap {
+		margin-right: 5px;
+	}
+	.footer .user_info-name {
+		font-size: 10px;
 	}
 }

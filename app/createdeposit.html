@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>
+		Bit Activity
+	</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="fav.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+<div class="wrapper">
+//= templates/header_auth.html
+//= templates/statusbar.html
+
+	<main class="center main_lk main_lk-dashboard gray_bg">
+		
+		//= templates/lk_header.html
+
+		<header class="page_header">
+			<h1 class="page_name">
+				Create deposit
+			</h1>
+		</header>
+		<form class="create_deposit">
+		
+			<div class="input_block input_block-system">
+				<p class="input_block-label">
+					<strong>Select currency</strong>
+				</p>
+				<div class="paw-select system_select system_select-gray" data-multiple="false" data-placeholder="Lang">
+					<button class="paw-current_value" type="button" data-set="0">
+						<span class="system">
+							<span class="system_logo">
+								<img src="img/bitcoin.svg" alt="">
+							</span>
+							<span class="system_name">
+								Bitcoin
+							</span>
+						</span>
+					</button>
+					<ul class="paw-list hidden">
+						<li>
+							<button type="button" class="paw-list-item" value="1">
+		 						<span class="system">
+		 							<span class="system_logo">
+		 								<img src="img/bitcoin.svg" alt="">
+		 							</span>
+		 							<span class="system_name">
+		 								Bitcoin
+		 							</span>
+		 						</span>
+		 					</button>
+		 				</li>
+						<li>
+							<button type="button" class="paw-list-item" value="1">
+		 						<span class="system">
+		 							<span class="system_logo">
+		 								<img src="img/bitcoin.svg" alt="">
+		 							</span>
+		 							<span class="system_name">
+		 								Bitcoin
+		 							</span>
+		 						</span>
+		 					</button>
+		 				</li>
+						<li>
+							<button type="button" class="paw-list-item" value="1">
+		 						<span class="system">
+		 							<span class="system_logo">
+		 								<img src="img/bitcoin.svg" alt="">
+		 							</span>
+		 							<span class="system_name">
+		 								Bitcoin
+		 							</span>
+		 						</span>
+		 					</button>
+		 				</li>
+					</ul>
+				</div>
+				<p class="error_text">
+					не те цифры
+				</p>
+			</div>
+
+			<div class="input_block">
+				<p class="input_block-label">
+					Please enter amount
+				</p>
+				<label class="input_block-fieldset">
+					<input type="text" name="wallet">
+					<div class="system">
+						<span class="system_logo">
+							<img src="img/bitcoin.svg" alt="">
+						</span>
+					</div>
+				</label>
+				<p class="error_text">
+					не те цифры
+				</p>
+			</div>
+
+			<h3>
+				Select invest plan:
+			</h3>
+			<label class="deposits_item deposits_item-dashboard deposits_item-label">
+				<input type="radio" name='plan' class="vissually_hidden" value="short plan">
+				<span class="checkmark"></span>
+				<header>
+					<h4>
+						Short
+					</h4>
+					<div class="plans_item-info">
+						<div class="plans_item-daily">
+							2.16% daily
+						</div>
+					</div>
+				</header>
+				<div class="deposits_item-info">
+					<h6 class="gray">
+						deposit amount
+					</h6>
+					<p>
+						$1000-$4999
+					</p>
+				</div>
+				<div class="deposits_item-info">
+					<h6 class="gray">
+						for 20 days
+					</h6>
+					<p class="gained">
+						total return 157.4%
+					</p>
+				</div>
+			</label>
+			<label class="deposits_item deposits_item-dashboard deposits_item-max deposits_item-label">
+				<input type="radio" name='plan' checked="" class="vissually_hidden" value="max plan">
+				<span class="checkmark"></span>
+				<header>
+					<h4>
+						Maximum
+					</h4>
+					<div class="plans_item-info">
+						<div class="plans_item-daily">
+							2.16% daily
+						</div>
+					</div>
+				</header>
+				<div class="deposits_item-info">
+					<h6 class="gray">
+						deposit amount
+					</h6>
+					<p>
+						$1000-$4999
+					</p>
+				</div>
+				<div class="deposits_item-info">
+					<h6 class="gray">
+						for 20 days
+					</h6>
+					<p class="gained">
+						total return 157.4%
+					</p>
+				</div>
+			</label>
+			<label class="deposits_item deposits_item-dashboard deposits_item-balanced deposits_item-label">
+				<input type="radio" name='plan' class="vissually_hidden" value="max plan">
+				<span class="checkmark"></span>
+				<header>
+					<h4>
+						Balanced
+					</h4>
+					<div class="plans_item-info">
+						<div class="plans_item-daily">
+							2.16% daily
+						</div>
+					</div>
+				</header>
+				<div class="deposits_item-info">
+					<h6 class="gray">
+						deposit amount
+					</h6>
+					<p>
+						$1000-$4999
+					</p>
+				</div>
+				<div class="deposits_item-info">
+					<h6 class="gray">
+						for 20 days
+					</h6>
+					<p class="gained">
+						total return 157.4%
+					</p>
+				</div>
+			</label>
+
+			<h3>
+				You get with this plan:
+			</h3>
+			<div class="potential_get">
+				<div class="potential_get-item">
+					<p>
+						From now
+					</p>
+					<div class="potential_get-amount">
+						$234.03 USD
+					</div>
+				</div>
+				<div class="potential_get-item">
+					<p>
+						From now
+					</p>
+					<div class="potential_get-amount">
+						$234.03 USD
+					</div>
+				</div>
+				<div class="potential_get-item">
+					<p>
+						From now
+					</p>
+					<div class="potential_get-amount">
+						$234.03 USD
+					</div>
+				</div>
+			</div>
+
+			<h3>
+				Select the source of replenishment:
+			</h3>
+			
+			<label class="radio">
+				<input type="radio" name="payment_source" checked="" class="visually_hidden">
+				<span>
+					Pay from wallet
+				</span>
+			</label>
+			<label class="radio">
+				<input type="radio" name="payment_source" class="visually_hidden">
+				<span>
+					Pay from account balance
+				</span>
+			</label>
+			<button class="btn btn-light btn-xl">
+				Check out
+			</button>
+
+			<div class="form-notify">
+				Небольшое информационное окно, что для всех планов у нас ежесекундные начисления и депозит возвращается в конце
+			</div>
+		</form>
+		
+		<button class="modal_btn" data-target='already-well'>
+			Pay already well
+		</button>
+		<div class="modal" id="already-well">
+			<div class="modal_content">
+				<button class="close"></button>
+				<header class="modal_header">
+					<h5 class="modal_name">
+						Pay already well
+					</h5>
+				</header>
+				<div class="bills_form-fields">
+					<div class="qr-code">
+						<img src="img/qr.png" alt="#">
+					</div>
+					<div class="input_block">
+						<p class="input_block-label">
+							Transaction amount
+						</p>
+						<label class="input_block-fieldset">
+							<input type="text" name="amount" value="0.00003299233 btc" disabled="">
+							<button type="button" class="btn btn-white btn-s btn-copy">copy</button>
+						</label>
+						<p class="error_text">
+							не те цифры
+						</p>
+					</div>
+					<div class="input_block">
+						<p class="input_block-label">
+							Cryptowallet adress:
+						</p>
+						<label class="input_block-fieldset">
+							<input type="text" name="amount" value="0x99hh47vyuy7474hub3t89gy8347rgu4823f3f4" disabled="">
+							<button type="button" class="btn btn-white btn-s btn-copy">copy</button>
+						</label>
+						<p class="error_text">
+							не те цифры
+						</p>
+						<div class="wait">
+							<span class="wait_icon">
+								<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M17.9455 16.6947L9.82714 0.458011C9.52135 -0.15267 8.51918 -0.15267 8.21339 0.458011L0.0950239 16.6947C-0.0438904 16.9744 -0.0303597 17.3054 0.134714 17.5733C0.298885 17.8385 0.58844 18 0.901448 18H17.1382C17.4512 18 17.7407 17.8376 17.9058 17.5724C18.07 17.3054 18.0844 16.9753 17.9455 16.6947ZM8.11777 7.17551H9.92186V12.5878H8.11777V7.17551ZM9.01982 15.5194C8.39741 15.5194 7.89227 15.0151 7.89227 14.3918C7.89227 13.7694 8.39741 13.2643 9.01982 13.2643C9.64222 13.2643 10.1474 13.7694 10.1474 14.3918C10.1474 15.0151 9.64222 15.5194 9.01982 15.5194Z" fill="#FF8400"></path>
+								</svg>
+							</span>
+							<p>
+								Deposit will be activated after 666 confirmations. Have patience.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main> 
+
+//= templates/modals.html
+//= templates/footer_auth.html
+</div>
+<!-- scripts -->
+	<script src="js/libs.min.js"></script> <!-- main scripts -->
+	<script src="js/main.js"></script> <!-- main scripts -->
+<!-- scripts -->
+</body>

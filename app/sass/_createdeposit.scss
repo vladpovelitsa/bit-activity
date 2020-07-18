@@ -1,0 +1,159 @@
+.create_deposit {
+	padding: 60px;
+	background: #FFFFFF;
+	box-shadow: 0px 18px 35px rgba(136, 178, 222, 0.13);
+	border-radius: 29px;
+	.system_select,
+	.input_block {
+		width: 100%;
+		max-width: 310px;
+	}
+	.input_block .system {
+		margin-right: 0;
+	}
+	.btn {
+		margin-top: 20px;
+	}
+}
+
+.system_select-gray {
+	background: #EFF3F6;
+}
+
+.deposits_item-label {
+	max-width: 520px;
+	grid-template-columns: 20px auto auto auto;
+	padding: 30px 25px;
+	grid-gap: 10px;
+	border: 1px solid #C8D4DD;
+	align-items: center;
+	input {
+		display: none;
+		&:checked + .checkmark:before {
+			display: block;
+		}
+	}
+	.checkmark {
+		background: #FFFFFF;
+		border: 1.2px solid #0497FD;
+		box-sizing: border-box;
+		box-shadow: 0px 25.2px 49px rgba(136, 178, 222, 0.13);
+		border-radius: 2.8px;
+		width: 20px;
+		height: 20px;
+		align-self: center;
+		position: relative;
+		
+		&:before {
+			content:'';
+			display: none;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			background: url("data:image/svg+xml,%3Csvg width='15' height='13' viewBox='0 0 15 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.70001 6.7001L6.60001 10.2001L13.6 1.1001' stroke='%230497FD' stroke-width='2.8'/%3E%3C/svg%3E%0A") center no-repeat;
+		}
+	}
+}
+
+.create_deposit {
+	h3 {
+		margin: 30px 0 40px;
+		font-size: 20px;
+		color: $middleblue;
+	}
+	.potential_get {
+		margin-left: 0;
+		margin-right: 12px;
+		max-width: 520px;
+	}
+}
+
+.radio {
+	display: block;
+
+	span {
+		position: relative;
+		padding-left: 40px;
+		display: block;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 1.5;
+		color: #6D788C;
+		margin-bottom: 10px;
+		position: relative;
+		cursor: pointer;
+		&:before {
+			content:'';
+			display: block;
+			position: absolute;
+			top: 4px;
+			left: 0;
+			width: 15px;
+			height: 15px;
+			border-radius:50%;
+			background: #FFFFFF;
+			border: 2px solid #0497FD;
+			box-shadow: 0px 18px 35px rgba(136, 178, 222, 0.13);
+		}
+	}
+	input:checked + span {
+		color: $middleblue;
+		&:before {
+			background: #0497fd;
+		}
+	}			
+}
+
+.form-notify {
+	margin: 40px 0;
+	display: block;
+	background: #EFF3F6;
+	box-shadow: 0px 5px 10px rgba(59, 119, 181, 0.05);
+	border-radius: 6px;
+	position: relative;
+	padding: 12px 25px 12px 60px;
+	max-width: 420px;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #6D788C;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&:before {
+		content:'';
+		display: block;
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		background: url("data:image/svg+xml,%3Csvg width='16' height='18' viewBox='0 0 16 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.3098 14.5038C4.44925 15.6546 5.68312 16.6931 6.99646 17.6067C7.3499 17.863 7.7669 18 8.19368 18C8.62046 18 9.03745 17.863 9.3909 17.6067C10.6315 16.6651 11.796 15.6135 12.8723 14.463C14.2255 13.119 15.2244 11.4167 15.7684 9.52763C15.9745 8.35775 16.0434 7.1649 15.9737 5.97673C15.9737 4.78767 15.8445 3.72077 15.8065 3.3217C15.7943 3.19073 15.7576 3.06373 15.6986 2.94833C15.6395 2.83292 15.5593 2.73149 15.4628 2.65011C15.3662 2.56873 15.2553 2.50908 15.1367 2.47474C15.0182 2.4404 14.8943 2.43207 14.7727 2.45026C14.3266 2.51907 13.8775 2.56257 13.4272 2.58057C12.8802 2.60558 12.3326 2.548 11.8005 2.40954C11.1671 2.17756 10.5757 1.83043 10.0522 1.38337C9.61604 1.03873 9.19974 0.66613 8.80559 0.267603C8.63618 0.0957647 8.41176 0 8.17848 0C7.94519 0 7.72077 0.0957647 7.55136 0.267603C7.15952 0.659949 6.74846 1.02968 6.31994 1.37522C5.78851 1.82045 5.19285 2.16981 4.55642 2.40954C3.95951 2.56236 3.34401 2.61457 2.73209 2.56428C2.22325 2.54464 1.71576 2.49571 1.21182 2.41769C1.09132 2.40185 0.969088 2.41194 0.852279 2.44737C0.73547 2.4828 0.626436 2.54286 0.53157 2.62402C0.436704 2.70518 0.357913 2.80581 0.299816 2.92002C0.241718 3.03423 0.205484 3.15972 0.193236 3.28912C0.155229 3.69634 0.0564109 4.76323 0.0260054 5.96044C-0.0431622 7.14861 0.0257786 8.34139 0.231242 9.51134C0.808718 11.4475 1.87407 13.1751 3.3098 14.5038ZM1.53868 5.99302C1.53868 5.27632 1.60709 4.60849 1.6527 4.11169C1.94155 4.11169 2.29882 4.17685 2.67888 4.19314C3.44506 4.24631 4.2143 4.17214 4.9593 3.97324C5.78226 3.68651 6.55348 3.25133 7.23971 2.68645C7.61978 2.38511 7.95424 2.09192 8.21268 1.87202C8.47113 2.10821 8.80559 2.40954 9.18566 2.68645C9.86922 3.25578 10.6412 3.6914 11.4661 3.97324C12.1436 4.13979 12.8397 4.20285 13.5336 4.16056L14.3546 4.10355C14.3926 4.60035 14.4382 5.27632 14.461 5.99302C14.5153 7.0362 14.4592 8.08261 14.2938 9.11227C13.8084 10.7074 12.9501 12.1429 11.8005 13.2821C10.7864 14.3634 9.68781 15.3497 8.51674 16.2303C8.41743 16.3043 8.2994 16.3439 8.17848 16.3439C8.05756 16.3439 7.93953 16.3043 7.84022 16.2303C6.60248 15.3698 5.43982 14.3912 4.36639 13.3066C3.14218 12.1867 2.22519 10.7312 1.71351 9.09598C1.5467 8.07197 1.48805 7.03109 1.53868 5.99302Z' fill='%230497FD'/%3E%3Cpath d='M1.53868 5.99302C1.53868 5.27632 1.60709 4.60849 1.6527 4.11169C1.94155 4.11169 2.29882 4.17685 2.67888 4.19314C3.44506 4.24631 4.2143 4.17214 4.9593 3.97324C5.78226 3.68651 6.55348 3.25133 7.23971 2.68645C7.61978 2.38511 7.95424 2.09192 8.21268 1.87202C8.47113 2.10821 8.80559 2.40954 9.18566 2.68645C9.86922 3.25578 10.6412 3.6914 11.4661 3.97324C12.1436 4.13979 12.8397 4.20285 13.5336 4.16056L14.3546 4.10355C14.3926 4.60035 14.4382 5.27632 14.461 5.99302C14.5153 7.0362 14.4592 8.08261 14.2938 9.11227C13.8084 10.7074 12.9501 12.1429 11.8005 13.2821C10.7864 14.3634 9.68781 15.3497 8.51674 16.2303C8.41743 16.3043 8.2994 16.3439 8.17848 16.3439C8.05756 16.3439 7.93953 16.3043 7.84022 16.2303C6.60248 15.3698 5.43982 14.3912 4.36639 13.3066C3.14218 12.1867 2.22519 10.7312 1.71351 9.09598C1.5467 8.07197 1.48805 7.03109 1.53868 5.99302Z' fill='%230497FD'/%3E%3C/svg%3E%0A") center no-repeat;
+		top: 50%;
+		left: 25px;
+		transform: translate(0,-50%);
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.deposits_item-label {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 15px;
+		header {
+			width: calc( 100% - 40px);
+			align-items: flex-start;
+		}
+		.deposits_item-info {
+			margin-top: 10px;
+			text-align: center;
+			margin: 10px auto 0;
+		}
+	}
+	.create_deposit {
+		padding: 15px;
+		border-radius:15px;
+	}
+}

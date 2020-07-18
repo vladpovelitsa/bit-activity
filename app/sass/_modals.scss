@@ -52,6 +52,20 @@
 		&#withdraw_done .modal_content {
 			text-align: center;
 		}
+		&#already-well .modal_content {
+			max-width: 700px;
+			padding: 35px;
+
+			.bills_form-fields {
+				box-shadow: unset;
+				background: none;
+				.qr-code {
+					left: 410px;
+					top: 45px;
+					max-width:60px;
+				}
+			}
+		}
 	}
 	.modal_content {
 		width: 90%;

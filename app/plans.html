@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>
+		Bit Activity
+	</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="fav.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+<div class="wrapper">
+//= templates/header_auth.html
+//= templates/statusbar.html
+
+<!-- plans -->
+	<section class="plans_section center gray_bg">
+		<h2 class="section_heading">
+			Investment plans
+		</h2>
+		<p class="section_desc">
+			To use Stacker you need to have an Airtable base. If you don't have an Airtable base you can sign up for Airtable and create a base. They have loads of templates to get you started. You don't need to be on a paid Airtable plan to use Stacker
+		</p>
+
+		<div class="currency_selection">
+			<p>
+				Select currency:
+			</p>
+			<div class="paw-select currenct_select" data-multiple='false' data-placeholder='Lang'>
+				<button class="paw-current_value" type="button" data-set='0'>
+					USD
+				</button>
+				<ul class="paw-list hidden">
+					<li>
+						<button class='paw-list-item' value="1">
+	 						USD
+	 					</button>
+	 				</li>
+					<li>
+						<button  class='paw-list-item' value="2">
+	 						RUB
+	 					</button>
+	 				</li>
+					<li>
+						<button  class='paw-list-item' value="2">
+	 						EUR
+	 					</button>
+	 				</li>
+				</ul>
+			</div>
+		</div>
+		<div class="plans">
+			<div class="plans_item">
+				<h4>
+					Short
+				</h4>
+				<div class="plans_item-amount">
+					<small>
+						deposit amount
+					</small>
+					$10 - $999
+				</div>
+				<div class="plans_item-info">
+					<div class="plans_item-daily">
+						2.16% daily
+					</div>
+					<p class="plans_item-term">
+						for <span class="accent">10 days</span> <br>
+						total return <span class="accent">121.6%</span>
+					</p>
+				</div>
+				<p class="plans_item-subtext">
+					Investment plan for quick enrichment. <br>
+					Designed for those who prefer less risk.
+				</p>
+				<p class="plans_item-accruals">
+					Every second accruals
+				</p>
+				<p class="plans_item-return">
+					Deposit return: <span class="accent">Yes</span>
+				</p>
+				<a href="makedeposit2.html" class="btn btn-s btn-bordered">
+					<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M5.40031 12.5134C6.27473 13.4554 7.22161 14.3055 8.22948 15.0534C8.50071 15.2632 8.82071 15.3753 9.14822 15.3753C9.47574 15.3753 9.79574 15.2632 10.067 15.0534C11.019 14.2826 11.9127 13.4218 12.7386 12.48C13.7771 11.3798 14.5436 9.98641 14.9611 8.44004C15.1192 7.48241 15.1721 6.50598 15.1186 5.53338C15.1186 4.56004 15.0195 3.68671 14.9903 3.36004C14.981 3.25284 14.9528 3.14888 14.9075 3.05441C14.8622 2.95995 14.8006 2.87691 14.7266 2.8103C14.6525 2.74368 14.5674 2.69485 14.4764 2.66674C14.3854 2.63863 14.2903 2.63182 14.197 2.64671C13.8547 2.70304 13.51 2.73864 13.1645 2.75338C12.7447 2.77384 12.3244 2.72672 11.9161 2.61338C11.43 2.42348 10.9762 2.13933 10.5745 1.77338C10.2398 1.49127 9.92028 1.18627 9.61781 0.860044C9.4878 0.719382 9.31558 0.640991 9.13656 0.640991C8.95753 0.640991 8.78531 0.719382 8.65531 0.860044C8.3546 1.18121 8.03916 1.48386 7.71031 1.76671C7.30249 2.13116 6.84537 2.41714 6.35697 2.61338C5.8989 2.73847 5.42657 2.78121 4.95697 2.74004C4.56649 2.72397 4.17703 2.68391 3.79031 2.62004C3.69784 2.60708 3.60403 2.61534 3.51439 2.64434C3.42475 2.67334 3.34108 2.7225 3.26828 2.78894C3.19548 2.85538 3.13502 2.93775 3.09043 3.03124C3.04585 3.12473 3.01804 3.22745 3.00864 3.33338C2.97947 3.66671 2.90364 4.54004 2.88031 5.52004C2.82723 6.49265 2.88013 7.46902 3.03781 8.42671C3.48097 10.0116 4.29852 11.4258 5.40031 12.5134ZM4.04114 5.54671C4.04114 4.96004 4.09364 4.41338 4.12864 4.00671C4.35031 4.00671 4.62447 4.06004 4.91614 4.07338C5.50411 4.11691 6.09443 4.05619 6.66614 3.89338C7.29769 3.65867 7.88952 3.30244 8.41614 2.84004C8.70781 2.59338 8.96447 2.35338 9.16281 2.17338C9.36114 2.36671 9.61781 2.61338 9.90948 2.84004C10.434 3.30609 11.0265 3.66267 11.6595 3.89338C12.1794 4.02971 12.7136 4.08133 13.2461 4.04671L13.8761 4.00004C13.9053 4.40671 13.9403 4.96004 13.9578 5.54671C13.9995 6.40063 13.9564 7.25719 13.8295 8.10004C13.457 9.40578 12.7983 10.5808 11.9161 11.5134C11.1379 12.3985 10.2948 13.2059 9.39614 13.9267C9.31993 13.9872 9.22935 14.0196 9.13656 14.0196C9.04376 14.0196 8.95319 13.9872 8.87698 13.9267C7.92713 13.2223 7.0349 12.4212 6.21114 11.5334C5.27168 10.6167 4.56797 9.42528 4.17531 8.08671C4.0473 7.24848 4.00229 6.39645 4.04114 5.54671Z" fill="#0497FD"/>
+					</svg>
+					select plan
+				</a>
+			</div>
+			<div class="plans_item">
+				<h4>
+					Maximum
+				</h4>
+				<div class="plans_item-amount">
+					<small>
+						deposit amount
+					</small>
+					$5000- $50000
+				</div>
+				<div class="plans_item-info">
+					<div class="plans_item-daily">
+						4.32% daily 
+					</div>
+					<p class="plans_item-term">
+						for <span class="accent">30 days</span> <br>
+						total return <span class="accent">229.6%</span>
+					</p>
+				</div>
+				<p class="plans_item-subtext">
+					Investment plan for quick enrichment. <br>
+					Designed for those who prefer less risk.
+				</p>
+				<p class="plans_item-accruals">
+					Every second accruals
+				</p>
+				<p class="plans_item-return">
+					Deposit return: <span class="accent">Yes</span>
+				</p>
+				<a href="makedeposit2.html" class="btn btn-s btn-transparent">
+					<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M5.40031 12.5134C6.27473 13.4554 7.22161 14.3055 8.22948 15.0534C8.50071 15.2632 8.82071 15.3753 9.14822 15.3753C9.47574 15.3753 9.79574 15.2632 10.067 15.0534C11.019 14.2826 11.9127 13.4218 12.7386 12.48C13.7771 11.3798 14.5436 9.98641 14.9611 8.44004C15.1192 7.48241 15.1721 6.50598 15.1186 5.53338C15.1186 4.56004 15.0195 3.68671 14.9903 3.36004C14.981 3.25284 14.9528 3.14888 14.9075 3.05441C14.8622 2.95995 14.8006 2.87691 14.7266 2.8103C14.6525 2.74368 14.5674 2.69485 14.4764 2.66674C14.3854 2.63863 14.2903 2.63182 14.197 2.64671C13.8547 2.70304 13.51 2.73864 13.1645 2.75338C12.7447 2.77384 12.3244 2.72672 11.9161 2.61338C11.43 2.42348 10.9762 2.13933 10.5745 1.77338C10.2398 1.49127 9.92028 1.18627 9.61781 0.860044C9.4878 0.719382 9.31558 0.640991 9.13656 0.640991C8.95753 0.640991 8.78531 0.719382 8.65531 0.860044C8.3546 1.18121 8.03916 1.48386 7.71031 1.76671C7.30249 2.13116 6.84537 2.41714 6.35697 2.61338C5.8989 2.73847 5.42657 2.78121 4.95697 2.74004C4.56649 2.72397 4.17703 2.68391 3.79031 2.62004C3.69784 2.60708 3.60403 2.61534 3.51439 2.64434C3.42475 2.67334 3.34108 2.7225 3.26828 2.78894C3.19548 2.85538 3.13502 2.93775 3.09043 3.03124C3.04585 3.12473 3.01804 3.22745 3.00864 3.33338C2.97947 3.66671 2.90364 4.54004 2.88031 5.52004C2.82723 6.49265 2.88013 7.46902 3.03781 8.42671C3.48097 10.0116 4.29852 11.4258 5.40031 12.5134ZM4.04114 5.54671C4.04114 4.96004 4.09364 4.41338 4.12864 4.00671C4.35031 4.00671 4.62447 4.06004 4.91614 4.07338C5.50411 4.11691 6.09443 4.05619 6.66614 3.89338C7.29769 3.65867 7.88952 3.30244 8.41614 2.84004C8.70781 2.59338 8.96447 2.35338 9.16281 2.17338C9.36114 2.36671 9.61781 2.61338 9.90948 2.84004C10.434 3.30609 11.0265 3.66267 11.6595 3.89338C12.1794 4.02971 12.7136 4.08133 13.2461 4.04671L13.8761 4.00004C13.9053 4.40671 13.9403 4.96004 13.9578 5.54671C13.9995 6.40063 13.9564 7.25719 13.8295 8.10004C13.457 9.40578 12.7983 10.5808 11.9161 11.5134C11.1379 12.3985 10.2948 13.2059 9.39614 13.9267C9.31993 13.9872 9.22935 14.0196 9.13656 14.0196C9.04376 14.0196 8.95319 13.9872 8.87698 13.9267C7.92713 13.2223 7.0349 12.4212 6.21114 11.5334C5.27168 10.6167 4.56797 9.42528 4.17531 8.08671C4.0473 7.24848 4.00229 6.39645 4.04114 5.54671Z" fill="#fff"/>
+					</svg>
+					select plan
+				</a>
+			</div>
+			<div class="plans_item">
+				<h4>
+					Balanced
+				</h4>
+				<div class="plans_item-amount">
+					<small>
+						deposit amount
+					</small>
+					$1000 - $4999
+				</div>
+				<div class="plans_item-info">
+					<div class="plans_item-daily">
+						3.24% daily 
+					</div>
+					<p class="plans_item-term">
+						for <span class="accent">20 days</span> <br>
+						total return <span class="accent">164.8%</span>
+					</p>
+				</div>
+				<p class="plans_item-subtext">
+					Investment plan for quick enrichment. <br>
+					Designed for those who prefer less risk.
+				</p>
+				<p class="plans_item-accruals">
+					Every second accruals
+				</p>
+				<p class="plans_item-return">
+					Deposit return: <span class="accent">Yes</span>
+				</p>
+				<a href="makedeposit2.html" class="btn btn-s btn-white">
+					<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M5.40031 12.5134C6.27473 13.4554 7.22161 14.3055 8.22948 15.0534C8.50071 15.2632 8.82071 15.3753 9.14822 15.3753C9.47574 15.3753 9.79574 15.2632 10.067 15.0534C11.019 14.2826 11.9127 13.4218 12.7386 12.48C13.7771 11.3798 14.5436 9.98641 14.9611 8.44004C15.1192 7.48241 15.1721 6.50598 15.1186 5.53338C15.1186 4.56004 15.0195 3.68671 14.9903 3.36004C14.981 3.25284 14.9528 3.14888 14.9075 3.05441C14.8622 2.95995 14.8006 2.87691 14.7266 2.8103C14.6525 2.74368 14.5674 2.69485 14.4764 2.66674C14.3854 2.63863 14.2903 2.63182 14.197 2.64671C13.8547 2.70304 13.51 2.73864 13.1645 2.75338C12.7447 2.77384 12.3244 2.72672 11.9161 2.61338C11.43 2.42348 10.9762 2.13933 10.5745 1.77338C10.2398 1.49127 9.92028 1.18627 9.61781 0.860044C9.4878 0.719382 9.31558 0.640991 9.13656 0.640991C8.95753 0.640991 8.78531 0.719382 8.65531 0.860044C8.3546 1.18121 8.03916 1.48386 7.71031 1.76671C7.30249 2.13116 6.84537 2.41714 6.35697 2.61338C5.8989 2.73847 5.42657 2.78121 4.95697 2.74004C4.56649 2.72397 4.17703 2.68391 3.79031 2.62004C3.69784 2.60708 3.60403 2.61534 3.51439 2.64434C3.42475 2.67334 3.34108 2.7225 3.26828 2.78894C3.19548 2.85538 3.13502 2.93775 3.09043 3.03124C3.04585 3.12473 3.01804 3.22745 3.00864 3.33338C2.97947 3.66671 2.90364 4.54004 2.88031 5.52004C2.82723 6.49265 2.88013 7.46902 3.03781 8.42671C3.48097 10.0116 4.29852 11.4258 5.40031 12.5134ZM4.04114 5.54671C4.04114 4.96004 4.09364 4.41338 4.12864 4.00671C4.35031 4.00671 4.62447 4.06004 4.91614 4.07338C5.50411 4.11691 6.09443 4.05619 6.66614 3.89338C7.29769 3.65867 7.88952 3.30244 8.41614 2.84004C8.70781 2.59338 8.96447 2.35338 9.16281 2.17338C9.36114 2.36671 9.61781 2.61338 9.90948 2.84004C10.434 3.30609 11.0265 3.66267 11.6595 3.89338C12.1794 4.02971 12.7136 4.08133 13.2461 4.04671L13.8761 4.00004C13.9053 4.40671 13.9403 4.96004 13.9578 5.54671C13.9995 6.40063 13.9564 7.25719 13.8295 8.10004C13.457 9.40578 12.7983 10.5808 11.9161 11.5134C11.1379 12.3985 10.2948 13.2059 9.39614 13.9267C9.31993 13.9872 9.22935 14.0196 9.13656 14.0196C9.04376 14.0196 8.95319 13.9872 8.87698 13.9267C7.92713 13.2223 7.0349 12.4212 6.21114 11.5334C5.27168 10.6167 4.56797 9.42528 4.17531 8.08671C4.0473 7.24848 4.00229 6.39645 4.04114 5.54671Z" fill="#0497FD"/>
+					</svg>
+					select plan
+				</a>
+			</div>
+		</div>
+	</section>
+<!-- plans -->
+<!-- profit -->
+	<section class="profit center gray_bg">
+		<h2 class="section_heading">
+			Profit calculator
+		</h2>
+		
+		<form class="profit_form">
+			<div class="input_block">
+				<p class="input_block-label">
+					Your investment
+				</p>
+				<label class="input_block-fieldset">
+					<input type="number" value="0.9999942424">
+					<!-- <div class="paw-select currenct_select" data-multiple='false' data-placeholder='Lang'>
+						<button class="paw-current_value" type="button" data-set='0'>
+							USD
+						</button>
+						<ul class="paw-list hidden">
+							<li>
+								<button type="button" class='paw-list-item' value="1">
+			 						USD
+			 					</button>
+			 				</li>
+							<li>
+								<button type="button" class='paw-list-item' value="2">
+			 						RUB
+			 					</button>
+			 				</li>
+							<li>
+								<button type="button" class='paw-list-item' value="2">
+			 						EUR
+			 					</button>
+			 				</li>
+						</ul>
+					</div> -->
+					<span class="input_currency">USD</span>
+				</label>
+				<P class="error_text">
+					не те цифры
+				</P>
+			</div>
+			<div class="input_block">
+				<p class="input_block-label">
+					Your plan
+				</p>
+				<div class="paw-select plan_select" data-multiple='false' data-placeholder='Lang'>
+					<button class="paw-current_value" type="button" data-set='0'>
+						3.24% daily
+					</button>
+					<ul class="paw-list hidden">
+						<li>
+							<button type="button" class='paw-list-item' value="1">
+		 						3.24% daily
+		 					</button>
+		 				</li>
+						<li>
+							<button type="button" class='paw-list-item' value="2">
+		 						1.24% daily
+		 					</button>
+		 				</li>
+						<li>
+							<button type="button" class='paw-list-item' value="2">
+		 						2.24% daily
+		 					</button>
+		 				</li>
+					</ul>
+				</div>
+			</div>
+			<div class="input_block ">
+				<p class="input_block-label">
+					Time invest
+				</p>
+				<label class="input_block-fieldset">
+					<input type="text" value="30 DAYS" disabled="" placeholder="30">
+				</label>
+			</div>
+			<p class="profit_form_text">
+				We update real-time <br> values.
+			</p>
+		</form>
+		
+		<div class="potential_get">
+			<div class="potential_get-item">
+				<p>
+					From now
+				</p>
+				<div class="potential_get-amount">
+					$234.03 USD
+				</div>
+			</div>
+			<div class="potential_get-item">
+				<p>
+					From now
+				</p>
+				<div class="potential_get-amount">
+					$234.03 USD
+				</div>
+			</div>
+			<div class="potential_get-item">
+				<p>
+					From now
+				</p>
+				<div class="potential_get-amount">
+					$234.03 USD
+				</div>
+			</div>
+			<div class="potential_get-item">
+				<p>
+					From now
+				</p>
+				<div class="potential_get-amount">
+					$234.03 USD
+				</div>
+			</div>
+			<div class="potential_get-item">
+				<p>
+					From now
+				</p>
+				<div class="potential_get-amount">
+					$234.03 USD
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- profit -->
+<!-- start -->
+	<section class="center start">
+		<h2 class="section_heading">
+			How to start
+		</h2>
+		<div class="start_slider_wrap">
+			<div class="start_slider">
+				<div class="start_slider-item">
+					<img src="img/start-img.png" alt="#">
+
+					<h3>
+						We start from skratch
+					</h3>
+					<p>
+						Stacker is free to build for as long as you like. There is no trial expiration for the apps that you create. You only need to subscribe
+					</p>
+				</div>
+				<div class="start_slider-item">
+					<img src="img/start-img.png" alt="#">
+
+					<h3>
+						We start from skratch
+					</h3>
+					<p>
+						Stacker is free to build for as long as you like. There is no trial expiration for the apps that you create. You only need to subscribe
+					</p>
+				</div>
+			</div>
+			<button class="btn btn-light btn-s next_step">
+				<span>Next step</span>
+				<svg class='right' width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M5.30224 3.697L3.43024 1.838L4.48324 0.771999L8.16224 4.451L4.48324 8.13L3.43024 7.077L5.30224 5.192H0.843242V3.697H5.30224Z" fill="white"/>
+				</svg>
+			</button>
+		</div>
+			
+	</section>
+<!-- start -->
+<!-- statistic -->
+	<section class="statistic center gray_bg">
+		<h2 class="section_heading">
+			Statistic
+		</h2>
+		<div class="filters">
+			<div class="paw-select filter_select" data-multiple='false' data-placeholder=''>
+				<button class="paw-current_value" type="button" data-set='0' title=''>
+					Last by time
+				</button>
+				<ul class="paw-list hidden">
+					<li>
+						<button type="button" class='paw-list-item' value="1">
+	 						Last by time
+	 					</button>
+	 				</li>
+					<li>
+						<button type="button" class='paw-list-item' value="1">
+	 						Last by time
+	 					</button>
+	 				</li>
+					<li>
+						<button type="button" class='paw-list-item' value="1">
+	 						Last by time
+	 					</button>
+	 				</li>
+				</ul>
+			</div>
+			<div class="paw-select filter_select" data-multiple='false' data-placeholder='Payment'>
+				<button class="paw-current_value" type="button" data-set='0'>
+					20
+				</button>
+				<ul class="paw-list hidden">
+					<li>
+						<button type="button" class='paw-list-item' value="1">
+	 						20
+	 					</button>
+	 				</li>
+					<li>
+						<button type="button" class='paw-list-item' value="1">
+	 						30
+	 					</button>
+	 				</li>
+					<li>
+						<button type="button" class='paw-list-item' value="1">
+	 						50
+	 					</button>
+	 				</li>
+				</ul>
+			</div>
+		</div>
+		<div class="operations">
+			<div class="operations_item">
+				<h5>
+					Deposit
+				</h5>
+				<div class="table table_deposits">
+				
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+					
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+					
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+					
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+					
+					
+				</div>
+			</div>
+			<div class="operations_item">
+				<h5>
+					Withdraw
+				</h5>
+				<div class="table table_withdraw">
+				
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+					
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+					
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+					
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+					
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+
+					<article class="table_row">
+						<div class="table_cell" title="Payment system">
+							
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+							
+						</div>
+						<div class="table_cell" title="partner" >
+							<p class="partner">
+								Username
+							</p>
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+						<div class="table_cell" title="Invested">
+							$ 99.00 <span class="currency">USD</span>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="operations_item">
+				<h5>
+					Last registrations
+				</h5>
+				<div class="table table_reg">
+					<article class="table_row">
+						<div class="table_cell" title="Partner">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>	
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+					</article>
+					<article class="table_row">
+						<div class="table_cell" title="Partner">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>	
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+					</article>
+					<article class="table_row">
+						<div class="table_cell" title="Partner">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>	
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+					</article>
+					<article class="table_row">
+						<div class="table_cell" title="Partner">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>	
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+					</article>
+					<article class="table_row">
+						<div class="table_cell" title="Partner">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>	
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+					</article>
+					<article class="table_row">
+						<div class="table_cell" title="Partner">
+							<div class="partner">
+								<img src="img/argentina-flag.svg" alt="#">
+								Username
+							</div>	
+						</div>
+						<div class="table_cell" title="date">
+							<time>
+								15.05 16:43:14
+							</time>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="statistic_counters gray_bg center">
+		<div class="statistic_counters-list">
+			<div class="statistic_counters-item">
+				<p class="statistic_counters-number">
+					240
+				</p>
+				<p class="statistic_counters-name">
+					Participants
+				</p>
+			</div>
+			<div class="statistic_counters-item">
+				<p class="statistic_counters-number">
+					5.000323btc
+				</p>
+				<p class="statistic_counters-name">
+					On the account
+				</p>
+			</div>
+			<div class="statistic_counters-item">
+				<p class="statistic_counters-number">
+					3.0323btc
+				</p>
+				<p class="statistic_counters-name">
+					Withdraw all
+				</p>
+			</div>
+			<div class="statistic_counters-item">
+				<p class="statistic_counters-number">
+					15
+				</p>
+				<p class="statistic_counters-name">
+					Days from start
+				</p>
+			</div>
+		</div>
+		<a href="#" class="see_all">
+			<span>Details →</span>
+		</a>
+	</section>
+<!-- statistic -->
+<!-- advantages -->
+	<section class="advantages center">
+		<h2 class="section_heading">
+			Our advantages
+		</h2>
+		<div class="advantages_content">
+			<div class="advantages_list">
+				<div class="advantages_item">
+					<div class="advantages_icon">
+						<img src="img/adv_icon-1.svg" alt="Profitable investment offers">
+					</div>
+					<h4 class="advantages_name">
+						Profitable <br> investment offers
+					</h4>
+				</div>
+				<div class="advantages_item">
+					<div class="advantages_icon">
+						<img src="img/adv_icon-2.svg" alt="Every second profit accruals">
+					</div>
+					<h4 class="advantages_name">
+						Every second <br> profit accruals
+					</h4>
+				</div>
+				<div class="advantages_item">
+					<div class="advantages_icon">
+						<img src="img/adv_icon-3.svg" alt="Every second profit accruals">
+					</div>
+					<h4 class="advantages_name">
+						Instant withdrawal <br> of funds
+					</h4>
+				</div>
+				<div class="advantages_item">
+					<div class="advantages_icon">
+						<img src="img/adv_icon-4.svg" alt="Every second profit accruals">
+					</div>
+					<h4 class="advantages_name">
+						Professional <br> team of traders
+					</h4>
+				</div>
+				<div class="advantages_item">
+					<div class="advantages_icon">
+						<img src="img/adv_icon-5.svg" alt="Every second profit accruals">
+					</div>
+					<h4 class="advantages_name">
+						24 / 7 support <br> for investors
+					</h4>
+				</div>
+				<div class="advantages_item">
+					<div class="advantages_icon">
+						<img src="img/adv_icon-6.svg" alt="Every second profit accruals">
+					</div>
+					<h4 class="advantages_name">
+						DDos and EV SSL <br> data protection
+					</h4>
+				</div>
+			</div>
+			<div class="advantages_text">
+				<p>
+					Stacker is free to build for as long as you like. There is no trial expiration for the apps that you create. You only need to subscribe to Stacker to launch your app to your users. Each of our plans only covers a single portal. Stacker is free to build for as long as you like. There is no trial expiration for the apps that you create. You only need to subscribe to Stacker to launch your app to your users. Each of our plans only covers a single portal. 
+				</p>
+				<a href="#" class="see_all">
+					<span>See more about investment plans →</span>
+				</a>
+			</div>
+		</div>
+	</section>
+<!-- advantages -->
+<!-- affiliate -->
+	<section class="affiliate center gray_bg">
+		<h2 class="section_heading">
+			Affiliate program
+		</h2>
+		<div class="affilate_content">
+			<p class="section_desc">
+				To use Stacker you need to have an Airtable base. If you don't have an Airtable base you can sign up for Airtable and create a base. They have loads of templates to get you started. 
+			</p>
+
+			<div class="affiliate_plans">
+				<div class="affiliate_plans-item">
+					<h5 class="affiliate_plans-name">
+						1st level
+						<small>
+							affiliate program
+						</small>
+					</h5>
+					<div class="affiliate_plans-icon">
+						<img src="img/affiliate_icon-1.png" alt="#">
+					</div>
+					<p class="affiliate_plans-percent">
+						5%
+					</p>
+					<p class="affiliate_plans-text"> 
+						forever
+						<span>
+							every deposit
+						</span>
+					</p>
+				</div>
+				<div class="affiliate_plans-item">
+					<h5 class="affiliate_plans-name">
+						2st level
+						<small>
+							affiliate program
+						</small>
+					</h5>
+					<div class="affiliate_plans-icon">
+						<img src="img/affiliate_icon-2.png" alt="#">
+					</div>
+					<p class="affiliate_plans-percent">
+						2%
+					</p>
+					<p class="affiliate_plans-text"> 
+						forever
+						<span>
+							every deposit
+						</span>
+					</p>
+				</div>
+				<div class="affiliate_plans-item">
+					<h5 class="affiliate_plans-name">
+						3st level
+						<small>
+							affiliate program
+						</small>
+					</h5>
+					<div class="affiliate_plans-icon">
+						<img src="img/affiliate_icon-3.png" alt="#">
+					</div>
+					<p class="affiliate_plans-percent">
+						1%
+					</p>
+					<p class="affiliate_plans-text"> 
+						forever
+						<span>
+							every deposit
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="affiliate_cta center">
+		<button class="btn btn-white btn-l ">
+			<span>Create account</span>
+			<svg class='right' width="6" height="6" viewBox="0 0 6 6" fill="#1DF032" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="3" cy="3" r="3"/>
+			</svg>
+		</button>
+	</section>
+<!-- affiliate -->
+
+
+//= templates/cta.html
+//= templates/systems.html
+
+//= templates/modals.html
+//= templates/footer_auth.html
+</div>
+<!-- scripts -->
+	<script src="js/libs.min.js"></script> <!-- main scripts -->
+	<script src="js/main.js"></script> <!-- main scripts -->
+<!-- scripts -->
+</body>

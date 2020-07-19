@@ -310,7 +310,48 @@ $('.team_slider').slick({
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 1
+      }
+    },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+$('.start_slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  nextArrow: '.start_slider_wrap .next_step',
+  prevArrow: '',
+});
+
+$('.faq_slider').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  nextArrow: '.faq-next',
+  prevArrow: '.faq-prev',
+  responsive: [
+    {
+      breakpoint: 1180,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 450,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
       }
     },
     // You can unslick at a given breakpoint now by adding:

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>
+		Bit Activity
+	</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="fav.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+<div class="wrapper">
+//= templates/header_auth.html
+//= templates/statusbar.html
+	<main class="center main_lk gray_bg">
+		
+		//= templates/lk_header.html
+
+		<header class="page_header">
+			<h1 class="page_name">
+				My transactions
+			</h1>
+		</header>
+		
+		<div class="filters">
+			<div class="paw-select filter_select" data-multiple='false' data-placeholder='Payment'>
+				<button class="paw-current_value" type="button" data-set='0' title='Payment:'>
+					all
+				</button>
+				<ul class="paw-list hidden">
+					<li>
+						<button type="button" class='paw-list-item' value="1">
+	 						notall
+	 					</button>
+	 				</li>
+					<li>
+						<button type="button" class='paw-list-item' value="1">
+	 						all
+	 					</button>
+	 				</li>
+					<li>
+						<button type="button" class='paw-list-item' value="1">
+	 						notall
+	 					</button>
+	 				</li>
+				</ul>
+			</div>
+			<div class="paw-select filter_select" data-multiple='false' data-placeholder='Payment'>
+				<button class="paw-current_value" type="button" data-set='0' title='Status:'>
+					all
+				</button>
+				<ul class="paw-list hidden">
+					<li>
+						<button type="button" class='paw-list-item' value="1">
+	 						notall
+	 					</button>
+	 				</li>
+					<li>
+						<button type="button" class='paw-list-item' value="1">
+	 						all
+	 					</button>
+	 				</li>
+					<li>
+						<button type="button" class='paw-list-item' value="1">
+	 						notall
+	 					</button>
+	 				</li>
+				</ul>
+			</div>
+					<div class="paw-select filter_select" data-multiple='false' data-placeholder='Payment'>
+						<button class="paw-current_value" type="button" data-set='0'>
+							20
+						</button>
+						<ul class="paw-list hidden">
+							<li>
+								<button type="button" class='paw-list-item' value="1">
+			 						20
+			 					</button>
+			 				</li>
+							<li>
+								<button type="button" class='paw-list-item' value="1">
+			 						30
+			 					</button>
+			 				</li>
+							<li>
+								<button type="button" class='paw-list-item' value="1">
+			 						50
+			 					</button>
+			 				</li>
+						</ul>
+					</div>
+		</div>
+		
+		<section class="table table_transactions">
+			<header class="table_row table_row-header">
+				<div class="table_cell" title="Transactions">
+					Transactions
+				</div>
+				<div class="table_cell" title="Payment system">
+					Payment system
+				</div>
+				<div class="table_cell" title="Amount">
+					Amount
+				</div>
+				<div class="table_cell" title="Comment">
+					Comment
+				</div>
+				<div class="table_cell" title="Status">
+					Status
+				</div>
+			</header>
+			<div class="empty_table">
+				<img src="img/table_placeholder.png" alt="#">
+			</div>
+			<p class="empty_text">
+				No committed transactions
+			</p>
+		</section>
+		
+		
+	</main>
+
+//= templates/modals.html
+//= templates/footer_auth.html
+
+</div>
+<!-- scripts -->
+	<script src="js/libs.min.js"></script> <!-- main scripts -->
+	<script src="js/main.js"></script> <!-- main scripts -->
+<!-- scripts -->
+</body>

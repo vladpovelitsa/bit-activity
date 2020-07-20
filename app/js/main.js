@@ -41,22 +41,19 @@ if ( document.querySelector('.btn-copy')) {
 	var copyEmailBtn = document.querySelectorAll('.btn-copy');  
   	copyEmailBtn.forEach((item) => {
       item.addEventListener('click', function(event) {  
-  	  // Выборка ссылки с электронной почтой 
+  	 
   	  var emailLink = item.previousElementSibling;  
   	  var range = document.createRange();  
   	  range.selectNode(emailLink);  
   	  window.getSelection().addRange(range);  
   	    
   	  try {  
-  	    // Теперь, когда мы выбрали текст ссылки, выполним команду копирования
   	    var successful = document.execCommand('copy');  
   	    var msg = successful ? 'successful' : 'unsuccessful';  
   	  }catch(err) {  
   	    console.log('Oops, unable to copy');  
   	  }   
-  	    
-  	  // Снятие выделения - ВНИМАНИЕ: вы должны использовать
-  	  // removeRange(range) когда это возможно
+  	 
   	  window.getSelection().removeAllRanges();  
   	});
   })

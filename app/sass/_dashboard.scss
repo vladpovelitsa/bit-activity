@@ -8,6 +8,9 @@
 	margin-left: 10px;
 	font-weight: 700;
 	font-size: 14px;
+	width: 120px;
+	margin-left: auto;
+	justify-content: flex-end;
 	&-value {
 		color: $middleblue;
 		margin-right: 5px;
@@ -119,7 +122,7 @@
 	}
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 768px) {
 	.payment_systems-dashboard {
 		grid-template-columns: 1fr;
 	}

@@ -28,8 +28,8 @@
 }
 
 .deposits_item-dashboard {
-	grid-template-columns: 1fr repeat(5, auto) 150px;
-	grid-gap: 30px;
+	grid-template-columns: 1fr auto auto  auto 135px auto 150px;
+	grid-gap: 20px;
 	padding: 30px 75px 30px 40px;
 	border-radius: 9px;
 	margin-bottom: 6px;

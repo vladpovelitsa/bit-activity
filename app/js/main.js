@@ -318,10 +318,24 @@ $('.team_slider').slick({
 
 $('.start_slider').slick({
   infinite: true,
-  slidesToShow: 1,
+  slidesToShow: 2,
   slidesToScroll: 1,
   nextArrow: '.start_slider_wrap .next_step',
   prevArrow: '',
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: false
+      }
+    },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 
 $('.faq_slider').slick({
@@ -356,3 +370,35 @@ $('.faq_slider').slick({
     // instead of a settings object
   ]
 });
+
+
+function tabs(){
+  var e = event.target;
+  var currentTabs;
+  getTabs(event);
+  changeTab(e, getTabs(event));
+
+}
+
+function getTabs(e) {
+  for (var i = 0; i < event.path.length; i++) {
+    if(event.path[i].classList.contains('tabs')) {
+      var currentTabs = event.path[i];
+      return currentTabs
+    }
+  }
+}
+function changeTab(elem,parent) {
+  if (elem.classList.contains('tab_toggler')) {
+    parent.querySelectorAll('.tab_content').forEach((item) => {
+      item.classList.remove('active');
+    })
+    parent.querySelectorAll('.tab_toggler').forEach((item) => {
+      item.classList.remove('active');
+    })
+    elem.classList.add('active')
+    parent.querySelector(elem.getAttribute('data-target')).classList.add('active')
+  }
+}
+
+document.addEventListener('click', tabs);

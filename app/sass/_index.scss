@@ -1,7 +1,7 @@
 .offer {
 	padding-top: 68px;
 	padding-bottom: 68px;
-	background:url('../img/index_offer-bg.svg') no-repeat center right;
+	background:url('../img/index_offer-bg.svg') no-repeat 75% 50% ;
 
 	&_heading {
 		color:$middleblue;
@@ -373,7 +373,7 @@
 .about {
 	padding-top: 50px;
 	padding-bottom:63px;
-	background:url('../img/about_bg.png') calc(100vw - 565px) 39px no-repeat;
+	background:url('../img/about_bg.png') calc(100vw - 800px) 39px no-repeat;
 	.section_desc {
 		max-width: 540px;
 	}
@@ -464,6 +464,9 @@
 	max-width: 350px;
 	width: 100%;
 	margin-right: 34px;
+	&:last-of-type {
+		margin-right: 0;
+	}
 	h5 {
 		font-size: 20px;
 		line-height: 126.4%;
@@ -551,17 +554,27 @@
 	padding-top: 90px;
 	padding-bottom: 110px;
 	&_slider {
-			max-width:350px;
+			max-width:100%;
 		&_wrap {
 			display: flex;
+			position: relative;
+			
 			.slick-arrow {
-				margin-top: 110px;
-				margin-left: 50px;
+				position: absolute;
+				top:110px;
+				left:400px;
+				height: 36px;
+
+				// margin-top: 110px;
+				// margin-left: 50px;
 			}
 		}
 		&-item {
 			img {
 				margin-bottom: 30px;
+				border-radius:10px;
+				border: 6px solid #EFF3F6;
+
 			}
 			h3 {
 				margin-bottom: 13px;
@@ -575,7 +588,17 @@
 				color: #6D788C;
 			}
 		}
-		
+		&-content{
+			max-width: 350px;
+		}
+		.slick-slide {
+			margin-right: 44px;
+			opacity:.5;
+			&.slick-current {
+				margin-right: 200px;
+				opacity:1;				
+			}
+		}		
 	}
 }
 
@@ -674,7 +697,8 @@
 .faq_slider {
 	padding-top: 40px;
 	padding-bottom: 40px;
-	a {
+	.tab_toggler {
+		border: none;
 		padding: 14px 10px;
 		background:#fff;
 		border-radius: 11px;
@@ -719,6 +743,27 @@
 		font-size: 15px;
 		line-height: 140%;
 		color: #6D788C;
+	}
+}
+.tab_content {
+	opacity:0;
+	pointer-events:none;
+	position: absolute;
+	display: none;
+	
+	&.active {
+		opacity:1;
+		pointer-events:unset;
+		position: relative;
+		z-index: 10;
+		display: block;
+		
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.about {
+		background-position: calc(100vw - 600px) 40px;	
 	}
 }
 
@@ -850,6 +895,30 @@
 			margin-bottom: 20px;
 		}
 	}
+	.start {
+		&_slider {
+			.slick-slide {
+				margin-right: 0;
+				opacity:1;
+				&.slick-current {
+					margin-right: 0px;
+					opacity:1;				
+				}
+			}
+			&_wrap {
+				display: flex;
+				position: relative;
+				
+				.slick-arrow {
+					position: relative;
+					top:0px;
+					left:0px;
+					margin-top: 70px;
+					margin-left: -20px;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 520px) {
@@ -877,12 +946,6 @@
 	.start {
 		&_slider {
 				max-width:250px;
-			&_wrap {
-				.slick-arrow {
-					margin-top: 110px;
-					margin-left: 20px;
-				}
-			}
 		}
 	}
 }

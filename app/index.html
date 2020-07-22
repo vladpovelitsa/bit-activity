@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 </head>
 <body>
 <div class="wrapper">
@@ -282,7 +282,7 @@
 	<!-- header -->
 
 
-	<marquee direction="left" scrollamount="8" class="statusbar center">
+	<section direction="left" scrollamount="8" class="statusbar center">
 		<ul class="statusbar_list ">
 			<li>
 				<span class="statusbar_list-currency">
@@ -428,7 +428,7 @@
 				</span>
 			</li>
 		</ul>
-	</marquee>
+	</section>
 	<div class="center">
 		<h2>
 			Pages:
@@ -1384,6 +1384,18 @@
 </div>
 <!-- scripts -->
 	<script src="js/libs.min.js"></script> <!-- main scripts -->
+	<script src='https://www.jqueryscript.net/demo/Text-Scrolling-Plugin-for-jQuery-Marquee/jquery.marquee.js?v=3'></script>
+	<script>
+		$('.statusbar').marquee({
+			speed: 10000,
+			gap: 50,
+			delayBeforeStart: 0,
+			direction: 'left',
+			duplicated: true,
+			pauseOnHover: true
+		});
+	</script>
+
 	<script src="js/main.js"></script> <!-- main scripts -->
 <!-- scripts -->
 </body>

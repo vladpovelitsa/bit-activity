@@ -1,6 +1,6 @@
 <!-- statusbar -->
 
-	<marquee direction="left" scrollamount="8" class="statusbar center">
+	<section direction="left" scrollamount="8" class="statusbar center">
 			<ul class="statusbar_list ">
 				<li>
 					<span class="statusbar_list-currency">
@@ -146,6 +146,17 @@
 					</span>
 				</li>
 			</ul>
-	</marquee>
-
+	</section>
+	
+	<script src='https://www.jqueryscript.net/demo/Text-Scrolling-Plugin-for-jQuery-Marquee/jquery.marquee.js?v=3'></script>
+	<script>
+		$('.statusbar').marquee({
+			speed: 10000,
+			gap: 50,
+			delayBeforeStart: 0,
+			direction: 'left',
+			duplicated: true,
+			pauseOnHover: true
+		});
+	</script>
 <!-- statusbar -->

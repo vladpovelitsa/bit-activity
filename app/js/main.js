@@ -318,11 +318,9 @@ $('.team_slider').slick({
 
 $('.start_slider').slick({
   infinite: true,
-  slidesToShow: 2,
+  slidesToShow: 3,
   slidesToScroll: 1,
-  nextArrow: '.start_slider_wrap .next_step',
-  prevArrow: '',
-  variableWidth: true,
+  variableWidth: false,
   responsive: [
     {
       breakpoint: 768,
@@ -381,10 +379,12 @@ function tabs(){
 }
 
 function getTabs(e) {
-  for (var i = 0; i < event.path.length; i++) {
-    if(event.path[i].classList.contains('tabs')) {
-      var currentTabs = event.path[i];
-      return currentTabs
+  if (event.target.classList.contains('tab_toggler')) {
+    for (var i = 0; i < event.path.length; i++) {
+      if(event.path[i].classList.contains('tabs')) {
+        var currentTabs = event.path[i];
+        return currentTabs
+      }
     }
   }
 }

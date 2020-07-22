@@ -30,11 +30,15 @@
 			font-size: 14px;
 			list-style: none;
 			margin-right: 24px;
+
+			display: flex;
+			justify-content: space-between;
 			a:hover {
 				color:$lightblue;
 			}
 			li{
-				margin-bottom: 12px;
+				margin:0 12px;
+
 				&:last-of-type {
 					margin-bottom: 0;
 				}
@@ -66,6 +70,15 @@
 			}
 		}
 	}
+	.lang_select {
+		border-radius:0 0 8px 8px;
+		.paw-list {
+			border-radius:8px 8px 0 0;
+			top: unset;
+			bottom: 100%;
+		}
+	}
+		
 	.social_links {
 		margin-left: 16px;
 		margin-bottom: 15px;
@@ -102,6 +115,13 @@
 	.footer .user {
 		margin-right: 0;
 		margin-left: 0;
+	}
+
+	.footer-nav ul {
+		flex-direction: column;
+		li {
+			margin: 0 0 12px;
+		}
 	}
 
 }

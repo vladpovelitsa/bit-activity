@@ -377,6 +377,10 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
+		img {
+			width: 100%;
+			max-width:350px;
+		}
 	}
 	.section_desc {
 		max-width: 540px;

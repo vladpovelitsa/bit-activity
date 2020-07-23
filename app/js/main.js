@@ -387,6 +387,7 @@ function getTabs(e) {
       }
     }
   }
+  // console.log(event.target)
 }
 function changeTab(elem,parent) {
   if (elem.classList.contains('tab_toggler')) {
@@ -402,3 +403,12 @@ function changeTab(elem,parent) {
 }
 
 document.addEventListener('click', tabs);
+
+$('.statusbar').marquee({
+  speed: 10000,
+  gap: 50,
+  delayBeforeStart: 0,
+  direction: 'left',
+  duplicated: true,
+  pauseOnHover: true
+});

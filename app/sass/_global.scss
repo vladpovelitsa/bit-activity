@@ -608,7 +608,7 @@
 				padding: 5px 16px;
 				position: relative;
 				width: 100%;
-				opacity:.4;
+				opacity:1;
 				transition:.5s;
 				color:#6D788C !important;
 				&:after {
@@ -622,9 +622,18 @@
 					top: 50%;
 					right: 10px;
 					transform: translate(0,-50%);
+					transition:.5s;
+				}
+				&[disabled] {
+					opacity: .4;
+					pointer-events:none;
 				}
 				&:hover {
-					opacity: 1;
+					text-decoration: underline;
+					
+					&:after {
+						background:$middleblue;
+					}
 				}
 			}
 			&::-webkit-scrollbar-track
@@ -684,6 +693,9 @@
 			font-weight: 700;
 			background: url("data:image/svg+xml,%3Csvg width='16' height='8' viewBox='0 0 16 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L8 6.6L15 1' stroke='%2300A0FB'/%3E%3C/svg%3E%0A") calc(100% - 10px) 50%  no-repeat;
 			white-space: unset;
+			* {
+				pointer-events:none;
+			}
 			.system {
 				width: 135px;
 				margin-right: 10px;

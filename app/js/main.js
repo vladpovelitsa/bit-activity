@@ -372,9 +372,10 @@ $('.faq_slider').slick({
 
 function tabs(){
   var e = event.target;
-  var currentTabs;
-  getTabs(event);
-  changeTab(e, getTabs(event));
+  var currentTabs = document.querySelector('.tabs')
+  // getTabs(event);
+  
+  changeTab(e, currentTabs);
 
 }
 

@@ -40,8 +40,8 @@
 .table_top {
 	font-size: 13px;
 	.table_row {
-		grid-template-columns: repeat(3, auto);
-		grid-gap: 15px;
+		grid-template-columns: repeat(3, 32%);
+		grid-gap: 2%;
 		padding: 20px;
 	}
 }
@@ -79,5 +79,17 @@
 	.operations-last {
 		padding-top: 30px;
 		padding-bottom: 30px;
+	}
+	.table_top .table_row {
+		grid-template-columns: repeat(3, 32%) !important;
+		padding: 5px;
+		.table_cell {
+			padding: 0;
+			border: none;
+			&:before {
+				display: none;
+			}
+		}	
+
 	}
 }

@@ -432,8 +432,8 @@
 			<li><a href="mydeposits2.html">My deposits 2</a></li>
 			<li><a href="nodeposits.html">No deposits</a></li>
 			<li><a href="notrasactions.html">No trasactions</a></li>
-
-
+			<hr>
+			<li><a href="reviews.html">Reviews</a></li>
 
 
 
@@ -620,6 +620,9 @@
 			</button></li>
 			<li><button class="btn btn-xl btn-dark show-notify show-success">
 				Notification open
+			</button></li>
+			<li><button class="modal_btn btn btn-xl btn-dark" data-target='withdraw'>
+				We withdraw funds ...
 			</button></li>
 		</ol>
 
@@ -1058,7 +1061,58 @@
 			<button class="notify-close"></button>
 		</div>
 	</div>
+	<div class="modal" id="withdraw">
+		<div class="modal_content modal_content-auth">
+			<button class="close"></button>
+			<header class="modal_header">
+				<h5 class="modal_name">
+					We withdraw funds ...
+				</h5>
+			</header>
+			<div class="withdraw_done">
+				<div class="notification notification-success">
+					<span class="notify-icon"></span>
+					<p>
+						All done!
+					</p>
+					<button class="notify-close"></button>
+				</div>
+				<div class="withdraw_done-text">
+					<h6>
+						Your batch is 
+					</h6>
+					<p>
+						71420da182c4f2aa17112cde5a824d67c4d5058bc43efae1e37cfd540cb55fc0
+					</p>
+				</div>
+			</div>
 
+			<form class="reviews_form">
+				<header class="modal_header">
+					<h5 class="modal_name">
+						Please leave a review!
+					</h5>
+				</header>
+
+				<h6>
+					Rate us:
+				</h6>
+				<div class="rating__group">
+		            <input class="rating__star" checked="checked" type="radio" name="general" value="1" aria-label="Ужасно">
+		            <input class="rating__star" type="radio" name="general" value="2" aria-label="Сносно">
+		            <input class="rating__star" type="radio" name="general" value="3" aria-label="Нормально">
+		            <input class="rating__star" type="radio" name="general" value="4" aria-label="Хорошо">
+		            <input class="rating__star" type="radio" name="general" value="5" aria-label="Отлично" checked="">
+		        </div>
+
+				<textarea rows="5" placeholder='How much did you enjoy using our service?' class="reviews_input"></textarea>
+
+				<button class="btn btn-xl btn-blue">
+					Leave review
+				</button>
+			</form>
+		</div>
+	</div>
 	<footer class="footer center">
 		<div class="footer_item">
 			<a href="index.html" class="logo">

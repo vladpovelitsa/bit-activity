@@ -413,3 +413,4 @@ $('.statusbar').marquee({
   duplicated: true,
   pauseOnHover: true
 });
+

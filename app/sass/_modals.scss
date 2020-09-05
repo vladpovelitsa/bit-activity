@@ -328,28 +328,28 @@
 	.reviews_form {
 
 	}
-	.rate {
-		&_wrap {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			margin-bottom: 22px;
-		}
-		&_label {
-			cursor: pointer;
-			margin: 0 1px;
-			display: block;
-			* {
-				pointer-events: none;
-			}
-			&.hovered,
-			&.selected {
-				svg path{
-					fill:#F79138;
-				}
-			}
-		}
-	}
+	// .rate {
+	// 	&_wrap {
+	// 		display: flex;
+	// 		align-items: center;
+	// 		justify-content: center;
+	// 		margin-bottom: 22px;
+	// 	}
+	// 	&_label {
+	// 		cursor: pointer;
+	// 		margin: 0 1px;
+	// 		display: block;
+	// 		* {
+	// 			pointer-events: none;
+	// 		}
+	// 		&.hovered,
+	// 		&.selected {
+	// 			svg path{
+	// 				fill:#F79138;
+	// 			}
+	// 		}
+	// 	}
+	// }
 	.rating__group {
 		display: flex;
 		align-items: center;
@@ -380,8 +380,8 @@
 	        }
 
 	        .rating__group:focus-within {
-	            outline: none;
-	            outline-offset: 0.2em;
+	            // outline: 5px solid red;
+	            // outline-offset: ;
 	        }
 
 	        /* Star */
@@ -398,6 +398,8 @@
 	            appearance: none;
 	            background-size: 2em auto;
 	            background-repeat: repeat-x;
+	            outline: none !important;
+	        	border: none;
 	        }
 
 	        .rating__star:focus {

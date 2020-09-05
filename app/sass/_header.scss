@@ -6,10 +6,10 @@
 	list-style: none;
 	font-size: 14px;
 	li {
-		margin-right: 24px;
+		margin-right: 10px;
 		margin-bottom: 0;
 		&:nth-last-child(-n+2) {
-			margin-right: 10px;
+			margin-right: 5px;
 		}
 	}
 	a:hover {
@@ -93,7 +93,7 @@
 .logo {
 	display: block;
 	min-width: 108px;
-	margin-right: 60px;
+	margin-right: 20px;
 }
 nav {
 	display: flex;

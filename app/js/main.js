@@ -33,6 +33,7 @@ function modalControls(e){
     body.classList.remove('overlay');
     console.log('close')
   }
+  console.log(e.target)
 }
 
 document.addEventListener('click', modalControls)

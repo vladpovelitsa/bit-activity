@@ -56,8 +56,58 @@
 			}
 		}
 	}
-
+	&-big {
+		flex-wrap: wrap;
+		justify-content: space-between;
+		nav {
+			width: auto;
+		}
+		.bottom_nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			margin-top: 26px;
+			padding-top: 14px;
+			border-top: 1px solid #0557AD;
+			.nav li {
+				margin-right: 27px;
+				a {
+					&.mark {
+						position: relative;
+						&:after {
+							content: '';
+							width: 4px;
+							height: 4px;
+							background: #7FFF1B;
+							border-radius: 50%;
+							position: absolute;
+							top: 0;
+							left:110%;
+						}
+					}
+				}
+			}
+		}
+	}
 }
+
+.verification {
+	display: flex;
+	align-items: center;
+	margin: 0 auto 0 35px;
+	&_icon {
+		margin-right: 12px;
+	}
+	&_text {
+		font-size: 14px;
+		line-height: 135.4%;
+		color: #fff;
+		font-weight: 700;
+		margin-right: 26px;
+	}
+}
+
 .user_nav {
 	position: absolute;
 	top: 100%;
@@ -301,6 +351,23 @@ nav {
 			}
 		}
 	}
+	.verification {
+		margin-right: 0px;
+	}
+	.header-big {
+		.verification,.logo {
+			margin-bottom: 2px;
+		}
+		.bottom_nav{
+			width: auto;
+			padding-top: 0;
+			margin-top: 0;
+			border-top: none;
+		}
+		.nav.active {
+			top: 123px;
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -334,6 +401,24 @@ nav {
 	.show_menu {
 		margin: 3px 0 0 10px;
 	}
+	.header-big {
+		nav {
+			width: 100%;
+			align-items: center;
+			margin-bottom: 20px;
+			justify-content: space-between;
+			.login_btns {
+				margin-right: 0;
+				margin-top: 0;
+				.btn:last-of-type {
+					margin-right: 0;
+				}
+			}
+		}
+		.nav.active {
+			top:175px;
+		}
+	}
 }
 
 @media screen and (max-width: 520px) {
@@ -351,4 +436,45 @@ nav {
 	.nav.active {
 		top: 162px
 	}
+	.header-big {
+		nav {
+			margin-top: 10px;
+			margin-bottom: 0;
+			.login_btns  {
+				margin-left: 0;
+				width: 100%;
+				justify-content: space-between;
+				.btn:first-of-type {
+					margin-left:0 ;
+				}
+			}
+			.social_links {
+				order: 99;
+				justify-content: center;
+				margin: 10px auto 0;
+			}
+		}
+		.nav.active {
+			top: 200px;
+		}
+	} 		
+}
+
+@media screen and (max-width: 405px) {
+	.header-big {
+		.verification {
+			margin-left: 0px;
+			&_text {
+				margin-right: 10px;
+				font-size: 11px;
+			}
+		}
+		.logo {
+			min-width: 75px;
+			width: 0;
+		}
+		.nav.active {
+		
+		}
+	} 
 }

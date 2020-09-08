@@ -57,6 +57,7 @@
 		}
 	}
 	&-big {
+		padding-top: 17px;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		nav {
@@ -68,7 +69,7 @@
 			justify-content: space-between;
 			width: 100%;
 			margin-top: 26px;
-			padding-top: 14px;
+			padding-top: 8px;
 			border-top: 1px solid #0557AD;
 			.nav li {
 				margin-right: 27px;
@@ -89,6 +90,10 @@
 				}
 			}
 		}
+		.login_btns {
+			margin-bottom: 0;
+			margin-left: 40px;
+		}
 	}
 }
 
@@ -105,6 +110,10 @@
 		color: #fff;
 		font-weight: 700;
 		margin-right: 26px;
+	}
+	.btn {
+		font-size: 12px;
+		padding: 4px 16px;;
 	}
 }
 
@@ -366,11 +375,10 @@ nav {
 			border-top: none;
 		}
 		.nav.active {
-			top: 123px;
+			top: 107px;
 		}
 		.user {
-			margin-top: 0;
-			margin-left: 15px;
+			margin: 2px 0 2px 15px;
 		}
 	}
 }
@@ -421,7 +429,7 @@ nav {
 			}
 		}
 		.nav.active {
-			top:175px;
+			top:158px;
 		}
 		.user {
 			margin-right: 0;
@@ -471,7 +479,12 @@ nav {
 		.user {
 			margin-top: 4px;
 		}
-	} 		
+		.logo {
+			width: 0;
+			max-width: 100px;
+			margin-right: 10px;
+		}
+	} 	
 }
 
 @media screen and (max-width: 405px) {
@@ -480,13 +493,16 @@ nav {
 			margin-left: 0px;
 			&_text {
 				margin-right: 10px;
-				font-size: 11px;
+				font-size: 9px;
+			}
+			.btn {
+				padding: 4px 8px;
 			}
 		}
-		.logo {
-			min-width: 75px;
-			width: 0;
-		}
+		// .logo {
+		// 	min-width: 75px;
+		// 	width: 0;
+		// }
 		
 	} 
 }

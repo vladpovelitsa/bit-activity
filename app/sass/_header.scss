@@ -58,6 +58,7 @@
 	}
 	&-big {
 		padding-top: 17px;
+		padding-bottom: 13px;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		nav {
@@ -474,7 +475,7 @@ nav {
 			}
 		}
 		.nav.active {
-			top: 200px;
+			top: 174px;
 		}
 		.user {
 			margin-top: 4px;

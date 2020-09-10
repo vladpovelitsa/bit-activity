@@ -47,6 +47,19 @@
 		display: flex;
 		align-items: center;
 		color:$middleblue;
+		span {
+			text-overflow: ellipsis;
+			display: block;
+			max-width: 75px;
+			overflow: hidden;
+			background: #fff;
+			&:hover {
+				overflow: visible;
+				position: relative;
+				z-index: 5;
+				max-width: unset;
+			}
+		}
 		img {
 			margin-right: 9px;
 			max-width: 22px

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>
+		Bit Activity
+	</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="fav.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+</head>
+<body>
+<div class="wrapper">
+//= templates/header_auth.html
+//= templates/statusbar.html
+
+<!-- pools -->
+	<section class="pools center gray_bg">
+		<header class="about_header">
+			<div class="about_content">
+				<h2 class="section_heading">
+					Investment pools
+				</h2>
+				<p class="section_desc">
+					To use Stacker you need to have an Airtable base. If you don't have an Airtable base you can sign up for Airtable and create a base. They have loads of templates to get you started. You don't need to be on a paid Airtable plan to use Stacker
+				</p>
+			</div>
+		</header>
+		<div class="currency_selection">
+			<p>
+				Select currency:
+			</p>
+			<div class="paw-select currenct_select" data-multiple='false' data-placeholder='Lang'>
+				<button class="paw-current_value" type="button" data-set='0'>
+					USD
+				</button>
+				<ul class="paw-list hidden">
+					<li>
+						<button class='paw-list-item' value="1">
+	 						USD
+	 					</button>
+	 				</li>
+					<li>
+						<button  class='paw-list-item' value="2">
+	 						RUB
+	 					</button>
+	 				</li>
+					<li>
+						<button  class='paw-list-item' value="2">
+	 						EUR
+	 					</button>
+	 				</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="pools_item pools_item-classic">
+			<div class="plans_item plans_item-classic">
+				<h4>
+					Classic
+				</h4>
+				<div class="plans_item-amount">
+					<small>
+						deposit amount
+					</small>
+					$500 - $2499
+				</div>
+				<div class="plans_item-info">
+					<div class="plans_item-daily">
+						3.24% daily
+					</div>
+					<p class="plans_item-term">
+						for <span class="accent">20 days</span> <br>
+						total return <span class="accent">164.8%</span>
+					</p>
+				</div>
+				<p class="plans_item-subtext">
+					Investment plan for quick enrichment. <br>
+					Designed for those who prefer less risk.
+				</p>
+				
+				<div class="loading_wrap">
+					<p class="loading_title">
+						progress:
+					</p>
+
+					<div class="progressbar">
+						<div class="progress"></div>
+					</div>
+					<p class="loading_income">
+						+ 500$
+					</p>
+					<p class="loading_goal">
+						5000$
+					</p>
+				</div>
+			</div>
+			<div class="pools_item-request">
+				<h5>
+					Request for Investment pools
+				</h5>
+				<div class="input_block input_block-system">
+					<p class="input_block-label">
+						<strong>Select currency</strong>
+					</p>
+					<div class="paw-select system_select system_select-gray" data-multiple="false" data-placeholder="Lang">
+						<button class="paw-current_value" type="button" data-set="0">
+							<span class="system">
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+								<span class="system_name">
+									Bitcoin
+								</span>
+							</span>
+						</button>
+						<ul class="paw-list hidden">
+							<li>
+								<button type="button" class="paw-list-item" value="1">
+									 <span class="system">
+										 <span class="system_logo">
+											 <img src="img/bitcoin.svg" alt="">
+										 </span>
+										 <span class="system_name">
+											 Bitcoin
+										 </span>
+									 </span>
+								 </button>
+							 </li>
+							<li>
+								<button type="button" class="paw-list-item" value="1">
+									 <span class="system">
+										 <span class="system_logo">
+											 <img src="img/bitcoin.svg" alt="">
+										 </span>
+										 <span class="system_name">
+											 Bitcoin
+										 </span>
+									 </span>
+								 </button>
+							 </li>
+							<li>
+								<button type="button" class="paw-list-item" value="1">
+									 <span class="system">
+										 <span class="system_logo">
+											 <img src="img/bitcoin.svg" alt="">
+										 </span>
+										 <span class="system_name">
+											 Bitcoin
+										 </span>
+									 </span>
+								 </button>
+							 </li>
+						</ul>
+					</div>
+				</div>
+				<div class="input_block">
+					<p class="input_block-label">
+						Please enter amount
+					</p>
+					<label class="input_block-fieldset">
+						<input type="text" name="wallet">
+						<div class="system">
+							<span class="system_logo">
+								<img src="img/bitcoin.svg" alt="">
+							</span>
+						</div>
+					</label>
+					<p class="error_text">
+						не те цифры
+					</p>
+				</div>
+				<button class="btn btn-l btn-light">Принять участие</button>
+
+				<div class="members_slider-wrap">
+					<h6>
+						Members
+					</h6>
+					<div class="members_slider">
+						<div class="member_item">
+							<span class="member_item-name system">
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+								<span class="system_name">
+									Bitcoin
+								</span>
+							</span>
+							<strong class="member_item-summ">
+								$ 99.00
+							</strong>
+							<p class="member_item-currency">
+								USD
+							</p>
+						</div>
+						<div class="member_item">
+							<span class="member_item-name system">
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+								<span class="system_name">
+									Bitcoin
+								</span>
+							</span>
+							<strong class="member_item-summ">
+								$ 99.00
+							</strong>
+							<p class="member_item-currency">
+								USD
+							</p>
+						</div>
+						<div class="member_item">
+							<span class="member_item-name system">
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+								<span class="system_name">
+									Bitcoin
+								</span>
+							</span>
+							<strong class="member_item-summ">
+								$ 99.00
+							</strong>
+							<p class="member_item-currency">
+								USD
+							</p>
+						</div>
+						<div class="member_item">
+							<span class="member_item-name system">
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+								<span class="system_name">
+									Bitcoin
+								</span>
+							</span>
+							<strong class="member_item-summ">
+								$ 99.00
+							</strong>
+							<p class="member_item-currency">
+								USD
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pools_item pools_item-classic">
+			<div class="plans_item plans_item-supreme">
+				<h4>
+					Supreme
+				</h4>
+				<div class="plans_item-amount">
+					<small>
+						deposit amount
+					</small>
+					$500 - $2499
+				</div>
+				<div class="plans_item-info">
+					<div class="plans_item-daily">
+						3.24% daily
+					</div>
+					<p class="plans_item-term">
+						for <span class="accent">20 days</span> <br>
+						total return <span class="accent">164.8%</span>
+					</p>
+				</div>
+				<p class="plans_item-subtext">
+					Investment plan for quick enrichment. <br>
+					Designed for those who prefer less risk.
+				</p>
+				
+				<div class="loading_wrap">
+					<p class="loading_title">
+						progress:
+					</p>
+
+					<div class="progressbar">
+						<div class="progress"></div>
+					</div>
+					<p class="loading_income">
+						+ 500$
+					</p>
+					<p class="loading_goal">
+						5000$
+					</p>
+				</div>
+			</div>
+			<div class="pools_item-request">
+				<h5>
+					Request for Investment pools
+				</h5>
+				<div class="input_block input_block-system">
+					<p class="input_block-label">
+						<strong>Select currency</strong>
+					</p>
+					<div class="paw-select system_select system_select-gray" data-multiple="false" data-placeholder="Lang">
+						<button class="paw-current_value" type="button" data-set="0">
+							<span class="system">
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+								<span class="system_name">
+									Bitcoin
+								</span>
+							</span>
+						</button>
+						<ul class="paw-list hidden">
+							<li>
+								<button type="button" class="paw-list-item" value="1">
+									 <span class="system">
+										 <span class="system_logo">
+											 <img src="img/bitcoin.svg" alt="">
+										 </span>
+										 <span class="system_name">
+											 Bitcoin
+										 </span>
+									 </span>
+								 </button>
+							 </li>
+							<li>
+								<button type="button" class="paw-list-item" value="1">
+									 <span class="system">
+										 <span class="system_logo">
+											 <img src="img/bitcoin.svg" alt="">
+										 </span>
+										 <span class="system_name">
+											 Bitcoin
+										 </span>
+									 </span>
+								 </button>
+							 </li>
+							<li>
+								<button type="button" class="paw-list-item" value="1">
+									 <span class="system">
+										 <span class="system_logo">
+											 <img src="img/bitcoin.svg" alt="">
+										 </span>
+										 <span class="system_name">
+											 Bitcoin
+										 </span>
+									 </span>
+								 </button>
+							 </li>
+						</ul>
+					</div>
+				</div>
+				<div class="input_block">
+					<p class="input_block-label">
+						Please enter amount
+					</p>
+					<label class="input_block-fieldset">
+						<input type="text" name="wallet">
+						<div class="system">
+							<span class="system_logo">
+								<img src="img/bitcoin.svg" alt="">
+							</span>
+						</div>
+					</label>
+					<p class="error_text">
+						не те цифры
+					</p>
+				</div>
+				<button class="btn btn-l btn-light">Принять участие</button>
+
+				<div class="members_slider-wrap">
+					<h6>
+						Members
+					</h6>
+					<div class="members_slider">
+						<div class="member_item">
+							<span class="member_item-name system">
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+								<span class="system_name">
+									Bitcoin
+								</span>
+							</span>
+							<strong class="member_item-summ">
+								$ 99.00
+							</strong>
+							<p class="member_item-currency">
+								USD
+							</p>
+						</div>
+						<div class="member_item">
+							<span class="member_item-name system">
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+								<span class="system_name">
+									Bitcoin
+								</span>
+							</span>
+							<strong class="member_item-summ">
+								$ 99.00
+							</strong>
+							<p class="member_item-currency">
+								USD
+							</p>
+						</div>
+						<div class="member_item">
+							<span class="member_item-name system">
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+								<span class="system_name">
+									Bitcoin
+								</span>
+							</span>
+							<strong class="member_item-summ">
+								$ 99.00
+							</strong>
+							<p class="member_item-currency">
+								USD
+							</p>
+						</div>
+						<div class="member_item">
+							<span class="member_item-name system">
+								<span class="system_logo">
+									<img src="img/bitcoin.svg" alt="">
+								</span>
+								<span class="system_name">
+									Bitcoin
+								</span>
+							</span>
+							<strong class="member_item-summ">
+								$ 99.00
+							</strong>
+							<p class="member_item-currency">
+								USD
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- pools -->
+
+
+
+//= templates/cta.html
+//= templates/systems.html
+
+//= templates/modals.html
+//= templates/footer_auth.html
+</div>
+<!-- scripts -->
+	<script src="js/libs.min.js"></script> <!-- main scripts -->
+	<script src='https://www.jqueryscript.net/demo/Text-Scrolling-Plugin-for-jQuery-Marquee/jquery.marquee.js?v=3'></script>
+	<script src="js/main.js"></script> <!-- main scripts -->
+<!-- scripts -->
+</body>

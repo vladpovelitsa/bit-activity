@@ -415,3 +415,17 @@ $('.statusbar').marquee({
   pauseOnHover: true
 });
 
+
+$('.members_slider').slick({
+  slidesToShow:2,
+  slidesToScroll: 1,
+  infinite: false,
+  responsive: [
+    {
+      breakpoint: 510,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
+})

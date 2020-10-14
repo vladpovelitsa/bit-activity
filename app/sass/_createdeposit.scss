@@ -1,5 +1,5 @@
 .create_deposit {
-	padding: 60px;
+	padding:69px 59px 60px;
 	background: #FFFFFF;
 	box-shadow: 0px 18px 35px rgba(136, 178, 222, 0.13);
 	border-radius: 29px;
@@ -155,5 +155,101 @@
 	.create_deposit {
 		padding: 15px;
 		border-radius:15px;
+	}
+}
+
+.select_popular {
+	margin-bottom: 30px;
+	&-heading {
+		color: $middleblue;
+		font-size: 13px;
+		padding-left: 19px;
+		margin-bottom: 10px;
+	}
+	&-wrap {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap:25px 24px;
+		margin-bottom: 30px;
+		max-height: 145px;
+		overflow: hidden;
+		transition: .5s;
+		&.active {
+			max-height: 1100px;
+			transition: 1s;
+		}
+	}
+	&-label {
+		border: 1px dashed #AFC1D0;
+		background: #fff;
+		padding: 7px 9px 7px 36px;
+		border-radius: 12px;
+		position: relative;
+		display: block;
+		transition: .5s;
+		.system {
+			margin-right: 0;
+			&_logo {
+				background: transparent;
+				margin-right: 0;
+			}
+		}
+		&:before {
+			content:'';
+			display: block;
+			width: 18px;
+			height: 18px;
+			border: 1px solid #AAC8DD;
+			border-radius: 4px;
+			position: absolute;
+			top:50%;
+			left: 16px;
+			transform: translate(0,-50%);
+			transition: .5s;
+			background-position: center;
+		}
+		input:checked + &{
+			// padding-left: 40px;
+			background: #EFF3F6;
+			border: 1px solid $middleblue;
+			&:before {
+				// width: 22px;
+				// height: 22px;
+				background: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.2681 0.57586C14.7938 0.101611 14.0249 0.101612 13.5507 0.57586L6.55127 7.57524C5.84833 8.27818 4.70863 8.27819 4.00569 7.57524L3.09356 6.66311C2.61931 6.18886 1.8504 6.18886 1.37615 6.66311C0.901904 7.13736 0.901904 7.90627 1.37615 8.38052L3.72285 10.7272C4.582 11.5864 5.97496 11.5864 6.83412 10.7272L15.2681 2.29326C15.7423 1.81902 15.7423 1.05011 15.2681 0.57586Z' fill='white' stroke='white' stroke-width='0.4'/%3E%3C/svg%3E%0A") center no-repeat $middleblue;
+				background-size: 70%;
+				border: 1px solid $middleblue;
+
+			}
+		}
+	}
+	&-item {
+		display: block;
+		cursor: pointer;
+	}
+	.btn {
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+		svg {
+			margin-top: 3px;
+			margin-left: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	.select_popular {
+		&-wrap {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.select_popular {
+		&-wrap {
+			grid-template-columns: 1fr;
+			grid-gap: 15px;
+		}
 	}
 }

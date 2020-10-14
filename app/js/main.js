@@ -429,3 +429,9 @@ $('.members_slider').slick({
     },
   ]
 })
+
+document.querySelector('.show_popular').onclick = () => {
+  event.preventDefault()
+  event.target.previousElementSibling.classList.toggle('active')
+  event.target.classList.toggle('active')
+}
